@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-dark-lighter pt-16 pb-8 border-t border-neon/10">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <Link to="/" className="flex items-center mb-4">
               <span className="text-neon text-3xl mr-2 font-orbitron">Ω</span>
@@ -17,32 +17,6 @@ const Footer = () => {
             <p className="text-gray-400 text-sm mb-4">
               AI lead generation swarm working 24/7 to find, engage, and convert your Ideal clients without human intervention.
             </p>
-          </div>
-          
-          <div className="space-y-4 flex flex-col items-center justify-center">
-            <h4 className="text-white font-titillium text-lg mb-4">Legal</h4>
-            <ul className="space-y-2 text-center">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-neon transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-neon transition-colors">
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-neon transition-colors">
-                  Data Processing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-neon transition-colors">
-                  Cookie Policy
-                </a>
-              </li>
-            </ul>
           </div>
           
           <div className="space-y-4">
