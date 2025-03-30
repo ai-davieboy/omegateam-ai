@@ -68,27 +68,11 @@ const Hero = () => {
               </span>
             </h1>
             
-            {/* Subheadline - updated capitalization */}
+            {/* Subheadline - with updated capitalization */}
             <h2 className="text-xl md:text-2xl text-gray-300 mb-8 font-titillium leading-relaxed">
               Working 24/7 to Find, Engage, and Convert Your
               <span className="block">Ideal Clients Without Human Intervention</span>
             </h2>
-            
-            {/* Process steps */}
-            <div className="hidden md:flex items-center justify-between mb-12 max-w-xl mx-auto">
-              <div className="text-center">
-                <div className="text-neon text-2xl font-orbitron animate-glow-pulse">DEFINE</div>
-              </div>
-              <div className="text-center">
-                <div className="text-neon text-2xl font-orbitron animate-glow-pulse">FIND</div>
-              </div>
-              <div className="text-center">
-                <div className="text-neon text-2xl font-orbitron animate-glow-pulse">ENGAGE</div>
-              </div>
-              <div className="text-center">
-                <div className="text-neon text-2xl font-orbitron animate-glow-pulse">CONVERT</div>
-              </div>
-            </div>
             
             {/* Updated flow line illustration - using uploaded image */}
             <div className="hidden md:flex justify-center mb-12">

@@ -9,7 +9,7 @@ interface TeamCardProps {
   twitter?: string;
 }
 
-const TeamCard = ({ name, title, photoUrl }: TeamCardProps) => {
+const TeamCard = ({ name, title, photoUrl, linkedin, twitter }: TeamCardProps) => {
   return (
     <div className="glassmorphism rounded-lg overflow-hidden transition-all duration-300 hover:shadow-neon group">
       {/* Image with fallback */}

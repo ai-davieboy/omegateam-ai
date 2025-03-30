@@ -9,7 +9,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import FAQSection from "@/components/FAQSection";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import TeamCard from "@/components/TeamCard";
 
 const Index = () => {
   const stats = [
@@ -96,25 +96,25 @@ const Index = () => {
     },
   ];
 
-  const teamPreview = [
+  const teamMembers = [
     {
       name: "Adam",
-      role: "Chief Operation Officer",
+      title: "Chief Operation Officer",
       photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/adam.png"
     },
     {
       name: "Jitka", 
-      role: "Chief Financial Officer",
+      title: "Chief Financial Officer",
       photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/jitka.png"
     },
     {
       name: "Arjun",
-      role: "Chief AI Officer",
+      title: "Chief AI Officer",
       photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/arjun.png" 
     },
     {
       name: "Chris",
-      role: "Cyber Security & Data Protection",
+      title: "Cyber Security & Data Protection",
       photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/chris.png"
     },
     {
@@ -136,6 +136,26 @@ const Index = () => {
       name: "Claire",
       title: "Business Development Partner",
       photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/claire_burns.png"
+    },
+    {
+      name: "Nasser",
+      title: "Chief Commercial Officer",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/nasser.png"
+    },
+    {
+      name: "Kailee",
+      title: "Growth Manager",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/kailee.png"
+    },
+    {
+      name: "Jisoo",
+      title: "Client Manager",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/jisoo.png"
+    },
+    {
+      name: "Wang",
+      title: "Lead Research Analyst",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/wang.png"
     }
   ];
 
@@ -278,53 +298,33 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Team Section Preview - Updated with more team members and new subtitle */}
-      <section id="team-preview" className="py-16">
+      {/* Team Section - Full team display (not preview) */}
+      <section id="team" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
-              Meet Our <span className="text-neon animate-glow-pulse">Team</span>
+              Our <span className="text-neon animate-glow-pulse">Team</span>
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto mb-8">
               Meet the AI agents working around the clock to connect you with your next best clients.
             </p>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-8 mb-10">
-            {teamPreview.map((member, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <Avatar className="h-24 w-24 border-2 border-neon shadow-neon mb-3">
-                  <AvatarImage 
-                    src={member.photoUrl} 
-                    alt={member.name}
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      console.log(`Failed to load avatar image for ${member.name}:`, member.photoUrl);
-                    }}
-                  />
-                  <AvatarFallback className="bg-dark-lighter text-neon text-2xl">
-                    {member.name.charAt(0)}
-                  </AvatarFallback>
-                </Avatar>
-                <span className="text-white font-medium">{member.name}</span>
-                <span className="text-neon text-sm">{member.role || member.title}</span>
-              </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {teamMembers.map((member, index) => (
+              <TeamCard
+                key={index}
+                name={member.name}
+                title={member.title}
+                photoUrl={member.photoUrl}
+              />
             ))}
-          </div>
-          
-          <div className="text-center">
-            <Link to="/team">
-              <Button className="bg-transparent border border-neon text-neon hover:bg-neon hover:text-black transition-all duration-300 shadow-neon hover:shadow-neon-strong">
-                View Full Team 
-                <ArrowRight size={16} className="ml-2" />
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
       
-      {/* Testimonials Section - Remove company names and add 3rd testimonial */}
-      <section id="testimonials" className="py-16">
+      {/* Testimonials Section */}
+      <section id="testimonials" className="py-16 bg-dark-lighter">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
@@ -348,7 +348,27 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Add Map Section */}
+      {/* CTA Section */}
+      <section id="cta" className="py-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-radial opacity-30"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
+              Ready to <span className="text-neon animate-glow-pulse">Transform</span> Your Sales Outreach?
+            </h2>
+            <p className="text-xl text-gray-300 mb-8 font-titillium">
+              Schedule a demo today and see how our AI-powered solution can revolutionize your lead generation.
+            </p>
+            <Link to="/contact">
+              <Button className="bg-neon text-dark hover:bg-transparent hover:text-neon border border-neon text-lg px-8 py-6 shadow-neon hover:shadow-neon-strong transition-all duration-300">
+                Book a Strategy Call
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+      
+      {/* Map Section */}
       <section id="location" className="py-16 bg-dark-lighter">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -392,27 +412,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* CTA Section - Keep this before FAQ */}
-      <section id="cta" className="py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-radial opacity-30"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
-              Ready to <span className="text-neon animate-glow-pulse">Transform</span> Your Sales Outreach?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 font-titillium">
-              Schedule a demo today and see how our AI-powered solution can revolutionize your lead generation.
-            </p>
-            <Link to="/contact">
-              <Button className="bg-neon text-dark hover:bg-transparent hover:text-neon border border-neon text-lg px-8 py-6 shadow-neon hover:shadow-neon-strong transition-all duration-300">
-                Book a Strategy Call
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-      
-      {/* FAQ Section - Updated questions */}
+      {/* FAQ Section */}
       <FAQSection />
       
       <Footer />
