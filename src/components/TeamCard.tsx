@@ -12,8 +12,8 @@ interface TeamCardProps {
 const TeamCard = ({ name, title, photoUrl, linkedin, twitter }: TeamCardProps) => {
   return (
     <div className="glassmorphism rounded-lg overflow-hidden transition-all duration-300 hover:shadow-neon group">
-      {/* Image with fallback */}
-      <div className="relative h-64 overflow-hidden">
+      {/* Image with fallback - increased height from h-64 to h-72 */}
+      <div className="relative h-72 overflow-hidden">
         <img
           src={photoUrl}
           alt={`${name} - ${title}`}

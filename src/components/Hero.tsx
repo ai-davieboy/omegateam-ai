@@ -1,7 +1,5 @@
 
 import { useState, useEffect } from 'react';
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [matrixChars, setMatrixChars] = useState<JSX.Element[]>([]);
@@ -74,14 +72,7 @@ const Hero = () => {
               <span className="block">Ideal Clients Without Human Intervention</span>
             </h2>
             
-            {/* Added extra spacing (mt-16) to move the CTA button further down */}
-            <div className="flex justify-center mt-16">
-              <Link to="/contact">
-                <Button className="bg-neon text-dark hover:bg-transparent hover:text-neon border border-neon text-lg px-8 py-6 shadow-neon hover:shadow-neon-strong transition-all duration-300">
-                  Start Converting Clients Now
-                </Button>
-              </Link>
-            </div>
+            {/* CTA button has been removed */}
           </div>
         </div>
       </div>
