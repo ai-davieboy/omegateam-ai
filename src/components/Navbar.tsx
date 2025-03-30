@@ -40,12 +40,6 @@ const Navbar = () => {
             </span>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
-            <Link to="/contact" className="text-white hover:text-neon transition-colors">
-              Contact Us
-            </Link>
-          </div>
-
           <div className="md:hidden">
             <button
               className="text-white p-2"
@@ -64,13 +58,7 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden mt-4 p-4 border border-neon/30 backdrop-blur-md bg-dark/90 rounded-md shadow-neon animate-in fade-in duration-200">
             <div className="flex flex-col space-y-4">
-              <Link 
-                to="/contact" 
-                className="text-white hover:text-neon transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact Us
-              </Link>
+              {/* Mobile menu links removed */}
             </div>
           </div>
         )}

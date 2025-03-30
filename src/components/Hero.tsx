@@ -61,8 +61,9 @@ const Hero = () => {
           <div className="max-w-3xl mx-auto">
             {/* Main headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight font-orbitron">
-              <span className="block text-neon animate-glow-pulse">
-                AI LEAD GENERATION SWARM
+              <span className="block">
+                <span className="text-neon animate-glow-pulse">LEAD GENERATION</span>{" "}
+                <span className="text-white">AI SWARM</span>
               </span>
             </h1>
             
