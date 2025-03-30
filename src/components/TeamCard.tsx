@@ -12,12 +12,16 @@ interface TeamCardProps {
 const TeamCard = ({ name, title, photoUrl, linkedin, twitter }: TeamCardProps) => {
   return (
     <div className="glassmorphism rounded-lg overflow-hidden transition-all duration-300 hover:shadow-neon group">
-      {/* Image */}
+      {/* Image with fallback */}
       <div className="relative h-64 overflow-hidden">
         <img
           src={photoUrl}
-          alt={name}
+          alt={`${name} - ${title}`}
           className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          onError={(e) => {
+            e.currentTarget.src = 'https://placehold.co/400x400/121212/32bea3?text=' + encodeURIComponent(name.charAt(0));
+            console.log(`Failed to load image for ${name}:`, photoUrl);
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-70"></div>
       </div>

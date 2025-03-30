@@ -8,6 +8,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import FAQSection from "@/components/FAQSection";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Index = () => {
   const stats = [
@@ -89,6 +90,29 @@ const Index = () => {
       role: "VP of Marketing",
       company: "DataHive Solutions",
     },
+  ];
+
+  const teamPreview = [
+    {
+      name: "Adam",
+      role: "COO",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/adam.png"
+    },
+    {
+      name: "Jane", 
+      role: "CFO",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/jane.png"
+    },
+    {
+      name: "Arjun",
+      role: "Chief AI",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/arjun.png" 
+    },
+    {
+      name: "Chris",
+      role: "Security",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/chris.png"
+    }
   ];
 
   return (
@@ -240,9 +264,34 @@ const Index = () => {
             <p className="text-gray-300 max-w-2xl mx-auto mb-8">
               The experts behind our AI-powered sales outreach solutions.
             </p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-8 mb-10">
+            {teamPreview.map((member, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <Avatar className="h-24 w-24 border-2 border-neon shadow-neon mb-3">
+                  <AvatarImage 
+                    src={member.photoUrl} 
+                    alt={member.name}
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      console.log(`Failed to load avatar image for ${member.name}:`, member.photoUrl);
+                    }}
+                  />
+                  <AvatarFallback className="bg-dark-lighter text-neon text-2xl">
+                    {member.name.charAt(0)}
+                  </AvatarFallback>
+                </Avatar>
+                <span className="text-white font-medium">{member.name}</span>
+                <span className="text-neon text-sm">{member.role}</span>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center">
             <Link to="/team">
               <Button className="bg-transparent border border-neon text-neon hover:bg-neon hover:text-black transition-all duration-300 shadow-neon hover:shadow-neon-strong">
-                View Team 
+                View Full Team 
                 <ArrowRight size={16} className="ml-2" />
               </Button>
             </Link>

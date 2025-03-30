@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import TeamCard from "@/components/TeamCard";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useEffect } from "react";
 
 const Team = () => {
   const teamMembers = [
@@ -81,6 +82,13 @@ const Team = () => {
       linkedin: "https://linkedin.com/in/wang-lra"
     }
   ];
+
+  useEffect(() => {
+    // Log image URLs to debug
+    teamMembers.forEach(member => {
+      console.log(`Loading image for ${member.name}:`, member.photoUrl);
+    });
+  }, []);
 
   return (
     <>
