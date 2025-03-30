@@ -327,7 +327,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Testimonials Section - Updated to use grid-cols-4 for 4 testimonials */}
+      {/* Testimonials Section */}
       <section id="testimonials" className="py-16 bg-dark-lighter">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
