@@ -1,7 +1,6 @@
 
 import { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,19 +39,7 @@ const Navbar = () => {
             </span>
           </div>
 
-          <div className="md:hidden">
-            <button
-              className="text-white p-2"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle Menu"
-            >
-              {isOpen ? (
-                <X size={24} className="text-neon" />
-              ) : (
-                <Menu size={24} className="text-neon" />
-              )}
-            </button>
-          </div>
+          {/* Removing the mobile menu button */}
         </div>
 
         {isOpen && (
