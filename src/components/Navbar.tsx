@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -22,7 +21,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu when path changes
   useEffect(() => {
     setIsOpen(false);
   }, [location.pathname]);
@@ -42,12 +40,7 @@ const Navbar = () => {
             </span>
           </Link>
 
-          {/* Desktop Navigation - Only phone and request demo */}
           <div className="hidden md:flex items-center space-x-4">
-            <div className="flex items-center">
-              <Phone size={16} className="text-neon mr-2" />
-              <span className="text-sm text-gray-300">+971 4-123-4567</span>
-            </div>
             <Link to="/contact">
               <Button className="bg-transparent border border-neon text-neon hover:bg-neon hover:text-black transition-all duration-300 shadow-neon hover:shadow-neon-strong">
                 Request Demo
@@ -55,7 +48,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               className="text-white p-2"
@@ -71,15 +63,10 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden mt-4 p-4 border border-neon/30 backdrop-blur-md bg-dark/90 rounded-md shadow-neon animate-in fade-in duration-200">
             <div className="flex flex-col space-y-4">
-              <div className="flex items-center pt-2">
-                <Phone size={16} className="text-neon mr-2" />
-                <span className="text-sm text-gray-300">+971 4-123-4567</span>
-              </div>
-              <Link to="/contact" className="pt-2">
+              <Link to="/contact">
                 <Button className="bg-transparent w-full border border-neon text-neon hover:bg-neon hover:text-black transition-all duration-300 shadow-neon">
                   Request Demo
                 </Button>
