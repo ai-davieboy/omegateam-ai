@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="space-y-4 flex flex-col items-center">
+          <div className="space-y-4 flex flex-col items-center justify-center">
             <h4 className="text-white font-titillium text-lg mb-4">Legal</h4>
             <ul className="space-y-2 text-center">
               <li>
