@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 
 const Hero = () => {
@@ -59,13 +60,13 @@ const Hero = () => {
         <div className="flex flex-col items-center text-center">
           <div className="max-w-3xl mx-auto">
             {/* Main headline */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight font-orbitron">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-12 text-white leading-tight font-orbitron">
               <span className="text-white">LEAD GENERATION</span>{" "}
               <span className="text-neon animate-glow-pulse">AI SWARM</span>
             </h1>
             
-            {/* Subheadline - with updated capitalization */}
-            <h2 className="text-xl md:text-2xl text-gray-300 mb-8 font-titillium leading-relaxed">
+            {/* Subheadline - with updated capitalization and bold font */}
+            <h2 className="text-xl md:text-2xl text-gray-300 mb-8 font-titillium leading-relaxed font-bold">
               Working 24/7 to Find, Engage, and Convert Your
               <span className="block">Ideal Clients Without Human Intervention</span>
             </h2>
