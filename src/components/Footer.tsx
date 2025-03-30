@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <footer className="bg-dark-lighter pt-16 pb-8 border-t border-neon/10">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between">
-          <div className="w-full max-w-md">
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="w-full md:max-w-md mb-8 md:mb-0">
             <Link to="/" className="flex items-center mb-4">
               <span className="text-neon text-3xl mr-2 font-orbitron">Ω</span>
               <span className="text-white font-orbitron text-xl">OmegaTeam</span>
@@ -19,23 +19,23 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="w-full max-w-md text-right">
+          <div className="w-full md:max-w-md">
             <h4 className="text-white font-titillium text-lg mb-4">Contact Us</h4>
             <div className="space-y-3">
-              <div className="flex items-start justify-end">
-                <p className="text-gray-400 text-right">
+              <div className="flex items-start">
+                <MapPin size={18} className="text-neon mt-0.5 mr-2 flex-shrink-0" />
+                <p className="text-gray-400">
                   Dubai Silicon Oasis – Free Zone<br />
                   Techno Point Building – Dubai – UAE
                 </p>
-                <MapPin size={18} className="text-neon mt-0.5 ml-2" />
               </div>
-              <div className="flex items-center justify-end">
+              <div className="flex items-center">
+                <Phone size={18} className="text-neon mr-2 flex-shrink-0" />
                 <p className="text-gray-400">+971 4-123-4567</p>
-                <Phone size={18} className="text-neon ml-2" />
               </div>
-              <div className="flex items-center justify-end">
+              <div className="flex items-center">
+                <Mail size={18} className="text-neon mr-2 flex-shrink-0" />
                 <p className="text-gray-400">hello@omegateam.ai</p>
-                <Mail size={18} className="text-neon ml-2" />
               </div>
             </div>
           </div>
