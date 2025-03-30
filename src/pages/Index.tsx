@@ -1,6 +1,4 @@
 import { ArrowRight, Bot, Clock, Cpu, Database, Fingerprint, Globe, LineChart, Map, Zap } from 'lucide-react';
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import Hero from "@/components/Hero";
 import StatCard from "@/components/StatCard";
 import ProcessTimeline from "@/components/ProcessTimeline";
@@ -302,7 +300,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Team Section - Full team display (not preview) */}
+      {/* Team Section */}
       <section id="team" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -361,13 +359,8 @@ const Index = () => {
               Ready to <span className="text-neon animate-glow-pulse">Transform</span> Your Sales Outreach?
             </h2>
             <p className="text-xl text-gray-300 mb-8 font-titillium">
-              Schedule a demo today and see how our AI-powered solution can revolutionize your lead generation.
+              Experience how our AI-powered solution can revolutionize your lead generation.
             </p>
-            <Link to="/contact">
-              <Button className="bg-neon text-dark hover:bg-transparent hover:text-neon border border-neon text-lg px-8 py-6 shadow-neon hover:shadow-neon-strong transition-all duration-300">
-                Book a Strategy Call
-              </Button>
-            </Link>
           </div>
         </div>
       </section>

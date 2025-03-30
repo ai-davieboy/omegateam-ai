@@ -1,6 +1,5 @@
+
 import { useState, useEffect } from 'react';
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [matrixChars, setMatrixChars] = useState<JSX.Element[]>([]);
@@ -72,15 +71,6 @@ const Hero = () => {
               Working 24/7 to Find, Engage, and Convert Your
               <span className="block">Ideal Clients Without Human Intervention</span>
             </h2>
-            
-            {/* Restored CTA button with extra spacing */}
-            <div className="flex justify-center mt-16">
-              <Link to="/contact">
-                <Button className="bg-neon text-dark hover:bg-transparent hover:text-neon border border-neon text-lg px-8 py-6 shadow-neon hover:shadow-neon-strong transition-all duration-300">
-                  Start Converting Clients Now
-                </Button>
-              </Link>
-            </div>
           </div>
         </div>
       </div>
