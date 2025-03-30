@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 
 const Hero = () => {
@@ -76,7 +75,7 @@ const Hero = () => {
       {/* Base dark background with deep teal hue */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-dark-lighter"></div>
       
-      {/* Animated subtle grid effect */}
+      {/* Animated subtle grid effect - REMOVED DUPLICATE LINES */}
       <div 
         className="absolute inset-0 opacity-30"
         style={{
@@ -107,9 +106,6 @@ const Hero = () => {
         <div className="absolute w-full h-px top-2/3 bg-gradient-to-r from-transparent via-neon/20 to-transparent opacity-50"></div>
       </div>
       
-      {/* Matrix-like falling code elements */}
-      {matrixElements}
-      
       {/* Content container */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center">
@@ -131,6 +127,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
+      {/* Matrix elements */}
+      {matrixElements}
     </div>
   );
 };
