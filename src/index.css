@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -84,18 +85,6 @@
 
   .neon-border {
     @apply border border-neon shadow-neon;
-  }
-
-  .matrix-code {
-    position: absolute;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    color: rgba(50, 190, 163, 0.8);
-    opacity: 0.7;
-    text-shadow: 0 0 8px rgba(50, 190, 163, 0.7);
-    user-select: none;
-    pointer-events: none;
-    font-weight: bold;
   }
 }
 

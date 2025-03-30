@@ -1,54 +1,7 @@
-import { useState, useEffect } from 'react';
+
+import React from 'react';
 
 const Hero = () => {
-  // Create matrix-like animation effect
-  const [matrixElements, setMatrixElements] = useState<JSX.Element[]>([]);
-  
-  useEffect(() => {
-    // Generate random matrix code elements
-    const generateMatrixElements = () => {
-      const newElements: JSX.Element[] = [];
-      const characters = "01";
-      const numElements = 30; // Number of falling elements
-      
-      for (let i = 0; i < numElements; i++) {
-        const randomChar = characters.charAt(Math.floor(Math.random() * characters.length));
-        const left = `${Math.random() * 100}%`;
-        const top = `${Math.random() * -100}%`;
-        const animationDuration = `${Math.random() * 10 + 5}s`;
-        const delay = `${Math.random() * 5}s`;
-        const opacity = Math.random() * 0.5 + 0.2;
-        const size = `${Math.random() * 1 + 0.8}rem`;
-        
-        newElements.push(
-          <div 
-            key={i}
-            className="matrix-code"
-            style={{
-              left,
-              top,
-              opacity,
-              fontSize: size,
-              animation: `matrix-fall ${animationDuration} linear ${delay} infinite`,
-            }}
-          >
-            {randomChar}
-          </div>
-        );
-      }
-      return newElements;
-    };
-    
-    setMatrixElements(generateMatrixElements());
-    
-    // Refresh matrix elements periodically
-    const interval = setInterval(() => {
-      setMatrixElements(generateMatrixElements());
-    }, 10000); // Refresh every 10 seconds
-    
-    return () => clearInterval(interval);
-  }, []);
-  
   // Handle click to create ripple effect
   const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -75,13 +28,12 @@ const Hero = () => {
       {/* Base dark background with deep teal hue */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-dark-lighter"></div>
       
-      {/* Animated subtle grid effect - REMOVED DUPLICATE LINES */}
+      {/* Clean grid pattern with single lines */}
       <div 
         className="absolute inset-0 opacity-30"
         style={{
           backgroundImage: 'linear-gradient(rgba(50, 190, 163, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(50, 190, 163, 0.3) 1px, transparent 1px)',
           backgroundSize: '40px 40px',
-          backgroundPosition: 'center center',
         }}
       ></div>
       
@@ -127,9 +79,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
-      {/* Matrix elements */}
-      {matrixElements}
     </div>
   );
 };
