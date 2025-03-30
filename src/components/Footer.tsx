@@ -19,9 +19,9 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-4 flex flex-col items-center">
             <h4 className="text-white font-titillium text-lg mb-4">Legal</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-center">
               <li>
                 <a href="#" className="text-gray-400 hover:text-neon transition-colors">
                   Privacy Policy
