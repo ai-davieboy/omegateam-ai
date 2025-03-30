@@ -4,7 +4,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: React.ReactNode;
 }
 
 const FAQSection = () => {
@@ -13,23 +13,34 @@ const FAQSection = () => {
   const faqs: FAQItem[] = [
     {
       question: "Do you guarantee conversions from your outreach?",
-      answer: "We guarantee precision targeting, clean data, and consistent follow-up — conversions depend on product-market fit."
-    },
-    {
-      question: "How can AI agent swarms benefit my business?",
-      answer: "You gain scalable outreach, 24/7 engagement, and cost-effective pipeline generation with zero manual effort."
+      answer: (
+        <>
+          <p className="text-gray-300 mb-2">No. Here's what we do guarantee:</p>
+          <ul className="list-disc pl-5 mb-4 space-y-2">
+            <li className="text-gray-300"><strong className="text-neon">Perfect Targeting:</strong> We reach the right buyer personas, fully aligned with your ICP.</li>
+            <li className="text-gray-300"><strong className="text-neon">Relentless Optimization:</strong> Through ongoing A/B testing, we maximize message open rates and replies.</li>
+            <li className="text-gray-300"><strong className="text-neon">Best Effort Execution:</strong> If your offer is strong and the timing is right, we give it every possible edge to succeed.</li>
+          </ul>
+          <p className="text-gray-300">Ultimately, conversions depend on market demand and the strength of your proposition. We bring the tools, strategy, and execution—your offer seals the deal.</p>
+        </>
+      )
     },
     {
       question: "Do you use LinkedIn DMs or cold calls for outreach?",
-      answer: "No. Our AI operates via cold email using only publicly available and verified data. No scraping, no cold calls."
+      answer: (
+        <>
+          <p className="text-gray-300 mb-2">No. We don't cold call or slide into LinkedIn DMs.</p>
+          <ul className="list-disc pl-5 mb-4 space-y-2">
+            <li className="text-gray-300">Cold calls interrupt people during their workday when they're focused on operational priorities — it's intrusive and rarely well-received.</li>
+            <li className="text-gray-300">LinkedIn is perceived as a career and networking space, not a sales channel — many professionals find business pitches there off-putting or inappropriate.</li>
+          </ul>
+          <p className="text-gray-300">We use work email — it respects the prospect's time, allows thoughtful review, and consistently delivers the best results for high-ticket B2B sales.</p>
+        </>
+      )
     },
     {
       question: "What kind of businesses do you work with?",
       answer: "We work with B2B companies across industries who target specific decision-makers and have a clear value proposition."
-    },
-    {
-      question: "How is your solution GDPR compliant?",
-      answer: "We only use publicly available business contact information, provide clear opt-out options, and don't process personal data beyond what's necessary for outreach."
     },
     {
       question: "What's the typical ROI timeline?",
@@ -42,7 +53,7 @@ const FAQSection = () => {
   };
   
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-4 py-16 bg-dark-lighter">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
           Frequently <span className="text-neon animate-glow-pulse">Asked Questions</span>
@@ -78,7 +89,7 @@ const FAQSection = () => {
               } overflow-hidden`}
             >
               <div className="p-5 pt-0 border-t border-gray-700">
-                <p className="text-gray-300">{faq.answer}</p>
+                {faq.answer}
               </div>
             </div>
           </div>

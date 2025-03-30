@@ -59,14 +59,8 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-radial opacity-30"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center">
-          <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
-            {/* Logo at the top */}
-            <div className="flex items-center mb-6">
-              <span className="text-neon text-5xl mr-3 font-orbitron">Ω</span>
-              <span className="text-white font-orbitron text-3xl">OmegaTeam</span>
-            </div>
-            
+        <div className="flex flex-col items-center text-center">
+          <div className="max-w-3xl mx-auto">
             {/* Main headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight font-orbitron">
               <span className="block text-neon animate-glow-pulse">
@@ -74,14 +68,14 @@ const Hero = () => {
               </span>
             </h1>
             
-            {/* Subheadline */}
-            <h2 className="text-xl md:text-2xl text-gray-300 mb-8 font-titillium leading-relaxed max-w-2xl">
-              WORKING 24/7 TO FIND, ENGAGE, AND CONVERT YOUR
-              <span className="block">IDEAL CLIENTS WITHOUT HUMAN INTERVENTION</span>
+            {/* Subheadline - updated capitalization */}
+            <h2 className="text-xl md:text-2xl text-gray-300 mb-8 font-titillium leading-relaxed">
+              Working 24/7 to Find, Engage, and Convert Your
+              <span className="block">Ideal Clients Without Human Intervention</span>
             </h2>
             
             {/* Process steps */}
-            <div className="hidden md:flex items-center justify-between mb-12 max-w-xl">
+            <div className="hidden md:flex items-center justify-between mb-12 max-w-xl mx-auto">
               <div className="text-center">
                 <div className="text-neon text-2xl font-orbitron animate-glow-pulse">DEFINE</div>
               </div>
@@ -96,42 +90,23 @@ const Hero = () => {
               </div>
             </div>
             
-            {/* Flow line illustration - we'll use SVG for this */}
-            <div className="hidden md:block relative h-12 mb-12 max-w-xl">
-              <svg
-                width="100%"
-                height="100%"
-                viewBox="0 0 500 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-full"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M0,25 C125,-50 250,100 375,-50 C500,100 625,0 750,25"
-                  stroke="#32bea3"
-                  strokeWidth="2"
-                  strokeDasharray="5,5"
-                  className="animate-glow-pulse"
-                />
-                <circle cx="0" cy="25" r="6" fill="#32bea3" />
-                <circle cx="166" cy="25" r="6" fill="#32bea3" />
-                <circle cx="333" cy="25" r="6" fill="#32bea3" />
-                <circle cx="500" cy="25" r="6" fill="#32bea3" />
-              </svg>
+            {/* Updated flow line illustration - using uploaded image */}
+            <div className="hidden md:flex justify-center mb-12">
+              <img 
+                src="/lovable-uploads/3e6fb13d-c76d-49c9-9bed-2e8a64d4038d.png" 
+                alt="Process flow" 
+                className="max-w-full h-auto"
+              />
             </div>
             
-            {/* CTA Button */}
-            <Link to="/contact">
-              <Button className="bg-neon text-dark hover:bg-transparent hover:text-neon border border-neon text-lg px-8 py-6 shadow-neon hover:shadow-neon-strong transition-all duration-300">
-                Get Started
-              </Button>
-            </Link>
-          </div>
-          
-          {/* Right side - empty for now, would usually contain an image */}
-          <div className="w-full lg:w-1/2 relative">
-            {/* This space would be used for an image or animated graphic */}
+            {/* CTA Button - updated text and centered */}
+            <div className="flex justify-center">
+              <Link to="/contact">
+                <Button className="bg-neon text-dark hover:bg-transparent hover:text-neon border border-neon text-lg px-8 py-6 shadow-neon hover:shadow-neon-strong transition-all duration-300">
+                  Start Converting Clients Now
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

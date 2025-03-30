@@ -1,5 +1,5 @@
 
-import { CheckCircle2, Users, Search, MessageCircle, UserCheck } from 'lucide-react';
+import { Users, Search, MessageCircle, UserCheck } from 'lucide-react';
 
 const ProcessTimeline = () => {
   const steps = [
@@ -46,14 +46,12 @@ const ProcessTimeline = () => {
             key={index} 
             className="glassmorphism rounded-lg p-6 transition-all duration-500 hover:shadow-neon relative overflow-hidden group"
           >
-            {/* Step number glow effect */}
-            <div className="absolute -top-10 -right-10 w-24 h-24 rounded-full bg-neon/5 flex items-center justify-center">
-              <span className="relative top-5 right-5 text-4xl font-bold text-neon/20">
-                {index + 1}
-              </span>
+            {/* Step number in glowing circle */}
+            <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-dark-lighter border border-neon/30 flex items-center justify-center shadow-neon">
+              <span className="text-neon text-sm font-bold">{index + 1}</span>
             </div>
             
-            <div className="relative z-10">
+            <div className="relative z-10 pt-8">
               {/* Icon */}
               <div className="mb-4 bg-dark-lighter p-4 rounded-full w-16 h-16 flex items-center justify-center group-hover:animate-border-glow transition-all duration-300">
                 {step.icon}
@@ -69,11 +67,6 @@ const ProcessTimeline = () => {
                 {step.description}
               </p>
             </div>
-            
-            {/* Connector line between steps (only for non-last items) */}
-            {index < steps.length - 1 && (
-              <div className="hidden lg:block absolute -right-3 top-1/2 w-6 border-t-2 border-dashed border-neon/30 transform -translate-y-1/2"></div>
-            )}
           </div>
         ))}
       </div>

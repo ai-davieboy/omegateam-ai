@@ -1,4 +1,4 @@
-import { ArrowRight, Bot, Clock, Cpu, Database, Fingerprint, Globe, LineChart, Zap } from 'lucide-react';
+import { ArrowRight, Bot, Clock, Cpu, Database, Fingerprint, Globe, LineChart, Map, Zap } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Hero from "@/components/Hero";
@@ -13,7 +13,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const Index = () => {
   const stats = [
     {
-      percentage: "35.2%",
+      percentage: "35%",
       description: "of a sales rep's time is spent on actual selling.",
       source: "Forbes",
     },
@@ -82,36 +82,59 @@ const Index = () => {
       quote: "OmegaTeam.ai transformed our workflow with their intelligent AI agents! Their innovative approach and seamless integration made our processes more efficient than ever. We're thrilled with the results and highly recommend them to any business looking to enhance productivity.",
       name: "Lucie Novak",
       role: "Head of Sales",
-      company: "GrowthTech Inc.",
     },
     {
       quote: "Working with OmegaTeam.ai has revolutionized our operations. Their AI agents are incredibly intuitive and have enhanced our efficiency significantly. Their expertise and support exceeded our expectations, making them an indispensable part of our team.",
       name: "Martin Vlcek",
       role: "VP of Marketing",
-      company: "DataHive Solutions",
+    },
+    {
+      quote: "The AI-powered outreach from OmegaTeam.ai has completely changed how we approach client acquisition. The quality of leads and automation of follow-ups has given our team back countless hours while increasing our conversion rates substantially.",
+      name: "Sarah Chen",
+      role: "Director of Business Development",
     },
   ];
 
   const teamPreview = [
     {
       name: "Adam",
-      role: "COO",
+      role: "Chief Operation Officer",
       photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/adam.png"
     },
     {
-      name: "Jane", 
-      role: "CFO",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/jane.png"
+      name: "Jitka", 
+      role: "Chief Financial Officer",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/jitka.png"
     },
     {
       name: "Arjun",
-      role: "Chief AI",
+      role: "Chief AI Officer",
       photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/arjun.png" 
     },
     {
       name: "Chris",
-      role: "Security",
+      role: "Cyber Security & Data Protection",
       photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/chris.png"
+    },
+    {
+      name: "Zara",
+      title: "Business Development Lead",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/zara.png"
+    },
+    {
+      name: "Bryan",
+      title: "Business Development Partner",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/bryan.png"
+    },
+    {
+      name: "Hana",
+      title: "Business Development Partner",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/hana.png"
+    },
+    {
+      name: "Claire",
+      title: "Business Development Partner",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/claire_burns.png"
     }
   ];
 
@@ -254,7 +277,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Team Section Preview */}
+      {/* Team Section Preview - Updated with more team members and new subtitle */}
       <section id="team-preview" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -262,7 +285,7 @@ const Index = () => {
               Meet Our <span className="text-neon animate-glow-pulse">Team</span>
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto mb-8">
-              The experts behind our AI-powered sales outreach solutions.
+              Meet the AI agents working around the clock to connect you with your next best clients.
             </p>
           </div>
           
@@ -283,7 +306,7 @@ const Index = () => {
                   </AvatarFallback>
                 </Avatar>
                 <span className="text-white font-medium">{member.name}</span>
-                <span className="text-neon text-sm">{member.role}</span>
+                <span className="text-neon text-sm">{member.role || member.title}</span>
               </div>
             ))}
           </div>
@@ -299,7 +322,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Testimonials Section */}
+      {/* Testimonials Section - Remove company names and add 3rd testimonial */}
       <section id="testimonials" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -311,34 +334,65 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard
                 key={index}
                 quote={testimonial.quote}
                 name={testimonial.name}
                 role={testimonial.role}
-                company={testimonial.company}
               />
             ))}
-          </div>
-          
-          <div className="mt-12 text-center">
-            <Link to="/case-studies">
-              <Button className="bg-transparent border border-neon text-neon hover:bg-neon hover:text-black transition-all duration-300 shadow-neon hover:shadow-neon-strong">
-                View Case Studies 
-                <ArrowRight size={16} className="ml-2" />
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
       
-      {/* FAQ Section */}
-      <FAQSection />
+      {/* Add Map Section */}
+      <section id="location" className="py-16 bg-dark-lighter">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
+              Our <span className="text-neon animate-glow-pulse">Location</span>
+            </h2>
+            <p className="text-gray-300 max-w-2xl mx-auto mb-8">
+              Visit our headquarters in Dubai Silicon Oasis
+            </p>
+          </div>
+          
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div className="w-full md:w-1/2 glassmorphism rounded-lg overflow-hidden">
+              <img 
+                src="/lovable-uploads/272c32c6-848f-4f40-87a3-9b1d11141cda.png" 
+                alt="Office Location Map" 
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="w-full md:w-1/2 md:pl-8">
+              <div className="glassmorphism rounded-lg p-8">
+                <div className="flex items-start mb-4">
+                  <Map size={24} className="text-neon mr-3 mt-1" />
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Dubai Office</h3>
+                    <p className="text-gray-300">
+                      Dubai Silicon Oasis – Free Zone<br />
+                      Techno Point Building – Dubai – UAE
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center mb-4">
+                  <Phone size={20} className="text-neon mr-3" />
+                  <p className="text-gray-300">+971 4-123-4567</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
-      {/* CTA Section */}
-      <section id="cta" className="py-16 bg-dark-lighter relative overflow-hidden">
+      {/* CTA Section - Keep this before FAQ */}
+      <section id="cta" className="py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-radial opacity-30"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -356,6 +410,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* FAQ Section - Updated questions */}
+      <FAQSection />
       
       <Footer />
     </>

@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Phone, MapPin, Mail, ArrowRight, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { MapPin, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,78 +8,38 @@ const Footer = () => {
   return (
     <footer className="bg-dark-lighter pt-16 pb-8 border-t border-neon/10">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <Link to="/" className="flex items-center mb-4">
               <span className="text-neon text-3xl mr-2 font-orbitron">Ω</span>
               <span className="text-white font-orbitron text-xl">OmegaTeam</span>
             </Link>
             <p className="text-gray-400 text-sm mb-4">
-              AI-powered sales outreach company revolutionizing how businesses connect with their ideal clients.
+              AI lead generation swarm working 24/7 to find, engage, and convert your Ideal clients without human intervention.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-neon transition-colors">
-                <Facebook size={18} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-neon transition-colors">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-neon transition-colors">
-                <Linkedin size={18} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-neon transition-colors">
-                <Instagram size={18} />
-              </a>
-            </div>
-          </div>
-          
-          <div className="space-y-4">
-            <h4 className="text-white font-titillium text-lg mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-gray-400 hover:text-neon transition-colors flex items-center">
-                  <ArrowRight size={14} className="mr-2" /> Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/features" className="text-gray-400 hover:text-neon transition-colors flex items-center">
-                  <ArrowRight size={14} className="mr-2" /> Features
-                </Link>
-              </li>
-              <li>
-                <Link to="/case-studies" className="text-gray-400 hover:text-neon transition-colors flex items-center">
-                  <ArrowRight size={14} className="mr-2" /> Case Studies
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-gray-400 hover:text-neon transition-colors flex items-center">
-                  <ArrowRight size={14} className="mr-2" /> Contact
-                </Link>
-              </li>
-            </ul>
           </div>
           
           <div className="space-y-4">
             <h4 className="text-white font-titillium text-lg mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-neon transition-colors flex items-center">
-                  <ArrowRight size={14} className="mr-2" /> Privacy Policy
+                <a href="#" className="text-gray-400 hover:text-neon transition-colors">
+                  Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-neon transition-colors flex items-center">
-                  <ArrowRight size={14} className="mr-2" /> Terms of Service
+                <a href="#" className="text-gray-400 hover:text-neon transition-colors">
+                  Terms of Service
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-neon transition-colors flex items-center">
-                  <ArrowRight size={14} className="mr-2" /> Data Processing
+                <a href="#" className="text-gray-400 hover:text-neon transition-colors">
+                  Data Processing
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-neon transition-colors flex items-center">
-                  <ArrowRight size={14} className="mr-2" /> Cookie Policy
+                <a href="#" className="text-gray-400 hover:text-neon transition-colors">
+                  Cookie Policy
                 </a>
               </li>
             </ul>

@@ -12,74 +12,62 @@ const Team = () => {
     {
       name: "Adam",
       title: "Chief Operation Officer",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/adam.png",
-      linkedin: "https://linkedin.com/in/adam-coo"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/adam.png"
     },
     {
-      name: "Jane",
+      name: "Jitka",
       title: "Chief Financial Officer",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/jane.png",
-      linkedin: "https://linkedin.com/in/jane-cfo"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/jitka.png"
     },
     {
       name: "Arjun",
       title: "Chief AI Officer",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/arjun.png",
-      linkedin: "https://linkedin.com/in/arjun-caio"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/arjun.png"
     },
     {
       name: "Chris",
       title: "Cyber Security & Data Protection",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/chris.png",
-      linkedin: "https://linkedin.com/in/chris-security"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/chris.png"
     },
     {
       name: "Zara",
       title: "Business Development Lead",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/zara.png",
-      linkedin: "https://linkedin.com/in/zara-bdl"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/zara.png"
     },
     {
       name: "Bryan",
       title: "Business Development Partner",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/bryan.png",
-      linkedin: "https://linkedin.com/in/bryan-bdp"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/bryan.png"
     },
     {
       name: "Hana",
       title: "Business Development Partner",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/hana.png",
-      linkedin: "https://linkedin.com/in/hana-bdp"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/hana.png"
     },
     {
       name: "Claire",
       title: "Business Development Partner",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/claire_burns.png",
-      linkedin: "https://linkedin.com/in/claire-bdp"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/claire_burns.png"
     },
     {
       name: "Nasser",
       title: "Chief Commercial Officer",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/nasser.png",
-      linkedin: "https://linkedin.com/in/nasser-cco"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/nasser.png"
     },
     {
       name: "Kailee",
       title: "Growth Manager",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/kailee.png",
-      linkedin: "https://linkedin.com/in/kailee-gm"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/kailee.png"
     },
     {
       name: "Jisoo",
       title: "Client Manager",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/jisoo.png",
-      linkedin: "https://linkedin.com/in/jisoo-cm"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/jisoo.png"
     },
     {
       name: "Wang",
       title: "Lead Research Analyst",
-      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/wang.png",
-      linkedin: "https://linkedin.com/in/wang-lra"
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/wang.png"
     }
   ];
 
@@ -105,7 +93,7 @@ const Team = () => {
               Our <span className="text-neon animate-glow-pulse">Team</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl font-titillium">
-              Meet the experts behind OmegaTeam.ai's innovative AI-powered sales outreach solutions.
+              Meet the AI agents working around the clock to connect you with your next best clients.
             </p>
           </div>
           
@@ -116,18 +104,11 @@ const Team = () => {
                 name={member.name}
                 title={member.title}
                 photoUrl={member.photoUrl}
-                linkedin={member.linkedin}
               />
             ))}
           </div>
           
           <div className="mt-16 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 font-orbitron">
-              Want to <span className="text-neon animate-glow-pulse">Join Our Team?</span>
-            </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8 font-titillium">
-              We're always looking for talented individuals who are passionate about AI and sales automation.
-            </p>
             <Link to="/contact">
               <Button className="bg-neon text-dark hover:bg-transparent hover:text-neon border border-neon text-lg px-8 py-6 shadow-neon hover:shadow-neon-strong transition-all duration-300">
                 Get in Touch
