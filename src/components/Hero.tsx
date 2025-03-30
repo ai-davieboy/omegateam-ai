@@ -28,11 +28,11 @@ const Hero = () => {
       {/* Base dark background with deep teal hue */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-dark-lighter"></div>
       
-      {/* Clean grid pattern with single lines */}
+      {/* Simplified grid pattern */}
       <div 
         className="absolute inset-0 opacity-30"
         style={{
-          backgroundImage: 'linear-gradient(rgba(50, 190, 163, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(50, 190, 163, 0.3) 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(rgba(50, 190, 163, 0.1) 1px, transparent 1px)',
           backgroundSize: '40px 40px',
         }}
       ></div>
@@ -45,18 +45,6 @@ const Hero = () => {
       
       {/* Main glow in center for emphasis */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-1/2 bg-gradient-radial from-neon/20 via-neon/5 to-transparent opacity-80 blur-3xl"></div>
-      
-      {/* Vertical glowing lines */}
-      <div className="absolute inset-0">
-        <div className="absolute h-full w-px left-1/4 bg-gradient-to-b from-transparent via-neon/20 to-transparent opacity-60"></div>
-        <div className="absolute h-full w-px left-2/4 bg-gradient-to-b from-transparent via-neon/15 to-transparent opacity-40"></div>
-        <div className="absolute h-full w-px left-3/4 bg-gradient-to-b from-transparent via-neon/25 to-transparent opacity-70"></div>
-      </div>
-      
-      {/* Horizontal glowing line */}
-      <div className="absolute inset-0">
-        <div className="absolute w-full h-px top-2/3 bg-gradient-to-r from-transparent via-neon/20 to-transparent opacity-50"></div>
-      </div>
       
       {/* Content container */}
       <div className="container mx-auto px-4 relative z-10">
