@@ -368,50 +368,6 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Map Section */}
-      <section id="location" className="py-16 bg-dark-lighter">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
-              Our <span className="text-neon animate-glow-pulse">Location</span>
-            </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto mb-8">
-              Visit our headquarters in Dubai Silicon Oasis
-            </p>
-          </div>
-          
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-            <div className="w-full md:w-1/2 glassmorphism rounded-lg overflow-hidden">
-              <img 
-                src="/lovable-uploads/272c32c6-848f-4f40-87a3-9b1d11141cda.png" 
-                alt="Office Location Map" 
-                className="w-full h-auto"
-              />
-            </div>
-            
-            <div className="w-full md:w-1/2 md:pl-8">
-              <div className="glassmorphism rounded-lg p-8">
-                <div className="flex items-start mb-4">
-                  <Map size={24} className="text-neon mr-3 mt-1" />
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Dubai Office</h3>
-                    <p className="text-gray-300">
-                      Dubai Silicon Oasis – Free Zone<br />
-                      Techno Point Building – Dubai – UAE
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center mb-4">
-                  <Phone size={20} className="text-neon mr-3" />
-                  <p className="text-gray-300">+971 4-123-4567</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
       {/* FAQ Section */}
       <FAQSection />
       

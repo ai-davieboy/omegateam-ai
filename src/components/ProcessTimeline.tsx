@@ -4,22 +4,18 @@ import { Users, Search, MessageCircle, UserCheck } from 'lucide-react';
 const ProcessTimeline = () => {
   const steps = [
     {
-      title: 'DEFINE',
       icon: <Users className="text-neon w-8 h-8" />,
       description: "Define your ICP, buyer persona, and USP. Share a contact person for warm leads.",
     },
     {
-      title: 'FIND',
       icon: <Search className="text-neon w-8 h-8" />,
       description: "We identify qualified companies and decision-makers. Emails are retrieved and verified for accuracy.",
     },
     {
-      title: 'ENGAGE',
       icon: <MessageCircle className="text-neon w-8 h-8" />,
       description: "AI agents email decision-makers on your behalf. Responses are routed anonymously.",
     },
     {
-      title: 'CONVERT',
       icon: <UserCheck className="text-neon w-8 h-8" />,
       description: "We respond based on replies: schedule calls, send info, follow up, identify right contacts.",
     },
@@ -57,11 +53,6 @@ const ProcessTimeline = () => {
                 <div className="mb-4 bg-dark-lighter p-4 rounded-full w-16 h-16 flex items-center justify-center group-hover:animate-border-glow transition-all duration-300">
                   {step.icon}
                 </div>
-                
-                {/* Title */}
-                <h3 className="text-2xl font-orbitron text-neon mb-3 group-hover:animate-glow-pulse">
-                  {step.title}
-                </h3>
                 
                 {/* Description */}
                 <p className="text-gray-300 group-hover:text-white transition-colors">

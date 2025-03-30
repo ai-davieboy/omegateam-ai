@@ -74,15 +74,6 @@ const Hero = () => {
               <span className="block">Ideal Clients Without Human Intervention</span>
             </h2>
             
-            {/* Updated flow line illustration - using uploaded image */}
-            <div className="hidden md:flex justify-center mb-12">
-              <img 
-                src="/lovable-uploads/3e6fb13d-c76d-49c9-9bed-2e8a64d4038d.png" 
-                alt="Process flow" 
-                className="max-w-full h-auto"
-              />
-            </div>
-            
             {/* CTA Button - updated text and centered */}
             <div className="flex justify-center">
               <Link to="/contact">
