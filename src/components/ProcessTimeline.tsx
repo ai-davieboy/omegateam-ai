@@ -42,20 +42,15 @@ const ProcessTimeline = () => {
             <div 
               key={index} 
               className="glassmorphism rounded-lg p-6 transition-all duration-500 hover:shadow-neon relative overflow-hidden group"
-            >
-              {/* Step number in glowing circle */}
-              <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-dark-lighter border border-neon/30 flex items-center justify-center shadow-neon">
-                <span className="text-neon text-sm font-bold">{index + 1}</span>
-              </div>
-              
-              <div className="relative z-10 pt-8">
-                {/* Icon */}
+            >              
+              <div className="relative z-10 pt-8 flex flex-col items-center">
+                {/* Icon - centered */}
                 <div className="mb-4 bg-dark-lighter p-4 rounded-full w-16 h-16 flex items-center justify-center group-hover:animate-border-glow transition-all duration-300">
                   {step.icon}
                 </div>
                 
                 {/* Description */}
-                <p className="text-gray-300 group-hover:text-white transition-colors">
+                <p className="text-gray-300 group-hover:text-white transition-colors text-center">
                   {step.description}
                 </p>
               </div>

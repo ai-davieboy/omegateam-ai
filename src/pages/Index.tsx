@@ -1,5 +1,4 @@
-
-import { ArrowRight, Bot, Clock, Cpu, Database, Fingerprint, Globe, LineChart, Map, Phone, Zap } from 'lucide-react';
+import { ArrowRight, Bot, Clock, Cpu, Database, Fingerprint, Globe, LineChart, Map, Zap } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Hero from "@/components/Hero";
@@ -93,6 +92,11 @@ const Index = () => {
       quote: "The AI-powered outreach from OmegaTeam.ai has completely changed how we approach client acquisition. The quality of leads and automation of follow-ups has given our team back countless hours while increasing our conversion rates substantially.",
       name: "Sarah Chen",
       role: "Director of Business Development",
+    },
+    {
+      quote: "We've been able to scale our outreach efforts without adding headcount thanks to OmegaTeam.ai. Their AI outreach system consistently delivers qualified leads that convert at a higher rate than our previous manual efforts.",
+      name: "Michael Johnson",
+      role: "Chief Revenue Officer",
     },
   ];
 
@@ -323,7 +327,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Testimonials Section */}
+      {/* Testimonials Section - Updated to use grid-cols-4 for 4 testimonials */}
       <section id="testimonials" className="py-16 bg-dark-lighter">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -335,7 +339,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard
                 key={index}
