@@ -1,4 +1,3 @@
-
 import { ArrowRight, Bot, Clock, Cpu, Database, Fingerprint, Globe, LineChart, Zap } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -214,7 +213,6 @@ const Index = () => {
             </div>
             
             <div className="w-full lg:w-1/2 lg:pl-12">
-              {/* Here you would normally put an image or illustration */}
               <div className="glassmorphism h-96 rounded-lg flex items-center justify-center p-6 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-radial opacity-30"></div>
                 <div className="text-center relative z-10">
@@ -228,6 +226,26 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Team Section Preview */}
+      <section id="team-preview" className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
+              Meet Our <span className="text-neon animate-glow-pulse">Team</span>
+            </h2>
+            <p className="text-gray-300 max-w-2xl mx-auto mb-8">
+              The experts behind our AI-powered sales outreach solutions.
+            </p>
+            <Link to="/team">
+              <Button className="bg-transparent border border-neon text-neon hover:bg-neon hover:text-black transition-all duration-300 shadow-neon hover:shadow-neon-strong">
+                View Team 
+                <ArrowRight size={16} className="ml-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
