@@ -59,7 +59,7 @@ const Hero = () => {
         <div className="flex flex-col items-center text-center">
           <div className="max-w-3xl mx-auto">
             {/* Main headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight font-orbitron">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight font-orbitron">
               <span className="text-neon animate-glow-pulse">LEAD GENERATION</span>{" "}
               <span className="text-white">AI SWARM</span>
             </h1>
