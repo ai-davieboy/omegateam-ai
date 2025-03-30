@@ -60,8 +60,8 @@ const Hero = () => {
           <div className="max-w-3xl mx-auto">
             {/* Main headline */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight font-orbitron">
-              <span className="text-neon animate-glow-pulse">LEAD GENERATION</span>{" "}
-              <span className="text-white">AI SWARM</span>
+              <span className="text-white">LEAD GENERATION</span>{" "}
+              <span className="text-neon animate-glow-pulse">AI SWARM</span>
             </h1>
             
             {/* Subheadline - with updated capitalization */}
