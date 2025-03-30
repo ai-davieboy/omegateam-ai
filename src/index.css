@@ -1,9 +1,9 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Titillium+Web:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add SF Pro Display from Apple's CDN */
+@import url('https://sf.abarba.me/v3/SF-Pro-Display/SF-Pro-Display.css');
 
 @layer base {
   :root {

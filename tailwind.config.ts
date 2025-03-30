@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -20,10 +19,24 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'orbitron': ['Orbitron', 'sans-serif'],
-				'titillium': ['Titillium Web', 'sans-serif'],
-				'inter': ['Inter', 'sans-serif'],
-				'space': ['Space Grotesk', 'sans-serif'],
+				'sans': [
+					'SF Pro Display', 
+					'-apple-system', 
+					'BlinkMacSystemFont', 
+					'Segoe UI', 
+					'Roboto', 
+					'Oxygen', 
+					'Ubuntu', 
+					'Cantarell', 
+					'Fira Sans', 
+					'Droid Sans', 
+					'Helvetica Neue', 
+					'sans-serif'
+				],
+				'orbitron': ['SF Pro Display', '-apple-system', 'sans-serif'],
+				'titillium': ['SF Pro Display', '-apple-system', 'sans-serif'],
+				'inter': ['SF Pro Display', '-apple-system', 'sans-serif'],
+				'space': ['SF Pro Display', '-apple-system', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
