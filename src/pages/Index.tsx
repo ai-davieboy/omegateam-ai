@@ -1,3 +1,4 @@
+import React from 'react';
 import { ArrowRight, Bot, Clock, Cpu, Database, Fingerprint, Globe, LineChart, Map, Zap } from 'lucide-react';
 import Hero from "@/components/Hero";
 import StatCard from "@/components/StatCard";
@@ -165,7 +166,7 @@ const Index = () => {
     <>
       <Navbar />
       
-      {/* Hero Section */}
+      {/* Hero Section with updated subtitle */}
       <Hero />
       
       {/* Stats Section */}
