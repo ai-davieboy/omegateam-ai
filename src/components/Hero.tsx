@@ -28,12 +28,16 @@ const Hero = () => {
       {/* Base dark background with deep teal hue */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-dark-lighter"></div>
       
-      {/* Simplified grid pattern */}
+      {/* Restored grid pattern with proper spacing and opacity */}
       <div 
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0 opacity-20"
         style={{
-          backgroundImage: 'linear-gradient(rgba(50, 190, 163, 0.1) 1px, transparent 1px)',
+          backgroundImage: `
+            linear-gradient(rgba(50, 190, 163, 0.2) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(50, 190, 163, 0.2) 1px, transparent 1px)
+          `,
           backgroundSize: '40px 40px',
+          backgroundPosition: '0 0, 0 0' // Ensure proper alignment
         }}
       ></div>
       
