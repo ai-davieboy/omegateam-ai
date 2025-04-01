@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 
@@ -23,7 +22,7 @@ const Hero = () => {
   
   return (
     <div 
-      className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden cursor-pointer"
+      className="relative min-h-screen flex items-center pt-36 pb-16 overflow-hidden cursor-pointer"
       onClick={handleClick}
     >
       {/* Base dark background with deep teal hue */}
