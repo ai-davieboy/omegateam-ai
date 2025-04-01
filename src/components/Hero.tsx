@@ -78,9 +78,9 @@ const Hero = () => {
               />
             </div>
             
-            {/* Down arrow - just the arrow with animation, no circle or text */}
-            <div className="mt-12 flex justify-center">
-              <ArrowDown className="w-8 h-8 text-neon animate-bounce animate-glow-pulse" />
+            {/* Down arrow - positioned lower with animation - taller arrow */}
+            <div className="mt-20 flex justify-center">
+              <ArrowDown className="w-10 h-16 text-neon animate-bounce" />
             </div>
           </div>
         </div>
