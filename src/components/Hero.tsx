@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
   // Handle click to create ripple effect
@@ -75,6 +77,16 @@ const Hero = () => {
                 className="w-[37.5%] h-auto mx-auto drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]"
               />
             </div>
+            
+            {/* Down arrow - pulsing and animated */}
+            <div className="mt-12 mb-4 flex justify-center">
+              <div className="p-3 rounded-full bg-neon/10 animate-bounce shadow-neon flex items-center justify-center">
+                <ArrowDown className="w-8 h-8 text-neon animate-glow-pulse" />
+              </div>
+            </div>
+            
+            {/* Text prompt to invite users to explore more */}
+            <p className="text-gray-400 font-titillium">Scroll to explore more</p>
           </div>
         </div>
       </div>
