@@ -68,15 +68,6 @@ const Hero = () => {
               Working 24/7 to Find, Engage, and Convert Your
               <span className="block">Ideal Clients Without Human Intervention</span>
             </h2>
-            
-            {/* Added bee image below subtitle */}
-            <div className="my-8 max-w-md mx-auto">
-              <img 
-                src="/public/lovable-uploads/c5ac3478-2357-4a68-a14e-7d7f2b874f9a.png" 
-                alt="AI Swarm Bees" 
-                className="w-full h-auto rounded-lg shadow-neon"
-              />
-            </div>
           </div>
         </div>
       </div>
