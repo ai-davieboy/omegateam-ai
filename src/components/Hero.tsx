@@ -78,15 +78,10 @@ const Hero = () => {
               />
             </div>
             
-            {/* Down arrow - pulsing and animated */}
-            <div className="mt-12 mb-4 flex justify-center">
-              <div className="p-3 rounded-full bg-neon/10 animate-bounce shadow-neon flex items-center justify-center">
-                <ArrowDown className="w-8 h-8 text-neon animate-glow-pulse" />
-              </div>
+            {/* Down arrow - just the arrow with animation, no circle or text */}
+            <div className="mt-12 flex justify-center">
+              <ArrowDown className="w-8 h-8 text-neon animate-bounce animate-glow-pulse" />
             </div>
-            
-            {/* Text prompt to invite users to explore more */}
-            <p className="text-gray-400 font-titillium">Scroll to explore more</p>
           </div>
         </div>
       </div>
