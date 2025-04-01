@@ -73,7 +73,7 @@ const Hero = () => {
               <img 
                 src="/lovable-uploads/58ab9a42-99bd-4e57-ba35-ebea566ae17d.png" 
                 alt="AI Swarm Bees on Honeycomb" 
-                className="w-1/2 h-auto mx-auto drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]"
+                className="w-[37.5%] h-auto mx-auto drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]"
               />
             </div>
           </div>
