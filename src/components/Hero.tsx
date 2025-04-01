@@ -65,8 +65,7 @@ const Hero = () => {
             
             {/* Subheadline - with normal font weight (not bold) */}
             <h2 className="text-xl md:text-2xl text-gray-300 mb-6 font-titillium leading-relaxed font-normal">
-              Working 24/7 to find, engage, and convert your ideal clients without human intervention
-              <span className="block">— like bees, operating in perfect harmony.</span>
+              Working tirelessly like bees, 24/7, to find, engage, and convert your ideal clients without human intervention.
             </h2>
             
             {/* Bee image below subtitle */}
