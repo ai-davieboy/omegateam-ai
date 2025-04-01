@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 
@@ -28,13 +29,13 @@ const Hero = () => {
       {/* Base dark background with deep teal hue */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-dark-lighter"></div>
       
-      {/* Grid pattern with increased visibility */}
+      {/* Grid pattern with medium visibility */}
       <div 
-        className="absolute inset-0 opacity-50"
+        className="absolute inset-0 opacity-40"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(50, 190, 163, 0.5) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(50, 190, 163, 0.5) 1px, transparent 1px)
+            linear-gradient(rgba(50, 190, 163, 0.4) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(50, 190, 163, 0.4) 1px, transparent 1px)
           `,
           backgroundSize: '40px 40px',
           backgroundPosition: '0 0, 0 0'
