@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Hero = () => {
@@ -64,8 +65,8 @@ const Hero = () => {
             
             {/* Subheadline - with normal font weight (not bold) */}
             <h2 className="text-xl md:text-2xl text-gray-300 mb-6 font-titillium leading-relaxed font-normal">
-              Relentlessly Working 24/7 to Find, Engage, and Convert Your
-              <span className="block">Ideal Clients — Like Bees, Precise, Tireless, and Unstoppable.</span>
+              Working 24/7 to find, engage, and convert your ideal clients without human intervention
+              <span className="block">— like bees, operating in perfect harmony.</span>
             </h2>
             
             {/* Bee image below subtitle */}
