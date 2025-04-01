@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 
@@ -31,14 +30,14 @@ const Hero = () => {
       
       {/* Grid pattern with increased visibility */}
       <div 
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0 opacity-50"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(50, 190, 163, 0.3) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(50, 190, 163, 0.3) 1px, transparent 1px)
+            linear-gradient(rgba(50, 190, 163, 0.5) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(50, 190, 163, 0.5) 1px, transparent 1px)
           `,
           backgroundSize: '40px 40px',
-          backgroundPosition: '0 0, 0 0' // Ensure proper alignment
+          backgroundPosition: '0 0, 0 0'
         }}
       ></div>
       
@@ -78,8 +77,8 @@ const Hero = () => {
               />
             </div>
             
-            {/* Down arrow - positioned lower with animation - taller arrow */}
-            <div className="mt-20 flex justify-center">
+            {/* Down arrow - positioned even lower */}
+            <div className="mt-24 flex justify-center">
               <ArrowDown className="w-10 h-16 text-neon animate-bounce" />
             </div>
           </div>
