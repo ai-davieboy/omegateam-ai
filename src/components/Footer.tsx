@@ -19,33 +19,39 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="text-center">
-            <h4 className="text-white font-titillium text-lg mb-4">Our Commitment to Sustainability​</h4>
-            <div className="flex items-start justify-center">
-              <Leaf size={18} className="text-neon mt-1 mr-2 flex-shrink-0" />
-              <p className="text-gray-400 text-center">
-                For every client partnership, we establish and maintain a beehive, supporting biodiversity and underlining the vital role bees play in our ecosystem.
-              </p>
+          <div>
+            <div className="flex items-center mb-4">
+              <Leaf size={18} className="text-neon mr-2 flex-shrink-0" />
+              <h4 className="text-white font-titillium text-lg">Our Commitment to Sustainability​</h4>
+            </div>
+            <p className="text-gray-400 text-sm">
+              For every client partnership, we establish and maintain a beehive, supporting biodiversity and underlining the vital role bees play in our ecosystem.
+            </p>
+            <div className="mt-4">
+              <a href="https://github.com/omegateam" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-neon transition-colors">
+                <Github size={18} className="mr-2" />
+                <span className="text-sm">GitHub</span>
+              </a>
             </div>
           </div>
           
-          <div className="text-right">
+          <div>
             <h4 className="text-white font-titillium text-lg mb-4">Contact Us</h4>
-            <div className="space-y-3 ml-auto w-fit">
-              <div className="flex items-start justify-end">
+            <div className="space-y-3">
+              <div className="flex items-start">
                 <MapPin size={18} className="text-neon mt-0.5 mr-2 flex-shrink-0" />
-                <p className="text-gray-400">
+                <p className="text-gray-400 text-sm">
                   Dubai Silicon Oasis – Free Zone<br />
                   Techno Point Building – Dubai – UAE
                 </p>
               </div>
-              <div className="flex items-center justify-end">
+              <div className="flex items-center">
                 <Phone size={18} className="text-neon mr-2 flex-shrink-0" />
-                <p className="text-gray-400">+971 4-123-4567</p>
+                <p className="text-gray-400 text-sm">+971 4-123-4567</p>
               </div>
-              <div className="flex items-center justify-end">
+              <div className="flex items-center">
                 <Mail size={18} className="text-neon mr-2 flex-shrink-0" />
-                <p className="text-gray-400">hello@omegateam.ai</p>
+                <p className="text-gray-400 text-sm">hello@omegateam.ai</p>
               </div>
             </div>
           </div>
