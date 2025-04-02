@@ -359,7 +359,7 @@ const Index = () => {
               Ready to <span className="text-neon animate-glow-pulse">Transform</span> Your Sales Outreach?
             </h2>
             <p className="text-xl text-gray-300 mb-8 font-titillium">
-              Experience how our AI-powered solution can revolutionize your lead generation.
+              While we do the heavy lifting, your sales reps can focus on what matters — closing deals, and enjoying that well-earned coffee.
             </p>
             
             <div className="flex justify-center mb-8">
