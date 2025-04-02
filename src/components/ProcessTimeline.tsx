@@ -1,3 +1,4 @@
+
 import { Users, Search, MessageCircle, UserCheck } from 'lucide-react';
 
 const ProcessTimeline = () => {
@@ -27,7 +28,7 @@ const ProcessTimeline = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
             How We <span className="text-neon animate-glow-pulse">Can Help</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6 font-titillium">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12 font-titillium">
             <span className="font-titillium">We solve one thing:</span> the pain of prospecting. Our AI swarm takes care of it automatically, so your team can focus on building trust and closing deals.
           </p>
 
