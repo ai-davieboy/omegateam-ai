@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   Accordion,
@@ -43,7 +42,7 @@ const FAQSection = () => {
             FAQ<span className="text-neon animate-glow-pulse">s</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-titillium">
-            <strong>Get answers to common questions about our AI-powered outreach solution.</strong>
+            Get answers to common questions about our AI-powered outreach solution.
           </p>
         </div>
         

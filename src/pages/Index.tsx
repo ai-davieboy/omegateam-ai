@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Bot, Clock, Cpu, Database, Fingerprint, Globe, LineChart, Map, Zap } from 'lucide-react';
 import Hero from "@/components/Hero";
@@ -204,7 +203,7 @@ const Index = () => {
               Why <span className="text-neon animate-glow-pulse">AI?</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-2 font-titillium">
-              <strong>Humans fail at routine. But excel at relationships.</strong>
+              Humans fail at routine. But excel at relationships.
             </p>
             <p className="text-gray-400 max-w-2xl mx-auto font-titillium">
               
@@ -241,7 +240,7 @@ const Index = () => {
                 Data Privacy & <span className="text-neon animate-glow-pulse">Compliance</span>
               </h2>
               <p className="text-xl text-gray-300 mb-6">
-                <strong>Fully GDPR-compliant.</strong>
+                Fully GDPR-compliant.
               </p>
               
               <ul className="space-y-4">
@@ -310,7 +309,7 @@ const Index = () => {
               Our <span className="text-neon animate-glow-pulse">Team</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8 font-titillium">
-              <strong>Meet the AI agents working around the clock to connect you with your next best clients.</strong>
+              Meet the AI agents working around the clock to connect you with your next best clients.
             </p>
           </div>
           
@@ -335,7 +334,7 @@ const Index = () => {
               Our <span className="text-neon animate-glow-pulse">Clients</span> Say
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto font-titillium">
-              <strong>Hear from businesses that have transformed their outreach with our AI-powered solution.</strong>
+              Hear from businesses that have transformed their outreach with our AI-powered solution.
             </p>
           </div>
           
