@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { MapPin, Mail, Phone } from 'lucide-react';
+import { MapPin, Mail, Phone, Leaf } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-dark-lighter pt-16 pb-8 border-t border-neon/10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between">
-          <div className="w-full md:max-w-md mb-8 md:mb-0">
+          <div className="w-full md:w-1/3 mb-8 md:mb-0">
             <Link to="/" className="flex items-center mb-4">
               <span className="text-neon text-3xl mr-2 font-orbitron">Ω</span>
               <span className="text-white font-orbitron text-lg">OmegaTeam</span>
@@ -19,9 +19,19 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="w-full md:max-w-md">
-            <h4 className="text-white font-titillium text-lg mb-4">Contact Us</h4>
-            <div className="space-y-3">
+          <div className="w-full md:w-1/3 mb-8 md:mb-0">
+            <h4 className="text-white font-titillium text-lg mb-4 text-center">Our Commitment to Sustainability​</h4>
+            <div className="flex items-start justify-center">
+              <Leaf size={18} className="text-neon mt-1 mr-2 flex-shrink-0" />
+              <p className="text-gray-400 text-center">
+                For every client partnership, we establish and maintain a beehive, supporting biodiversity and underlining the vital role bees play in our ecosystem.
+              </p>
+            </div>
+          </div>
+          
+          <div className="w-full md:w-1/3">
+            <h4 className="text-white font-titillium text-lg mb-4 md:text-right">Contact Us</h4>
+            <div className="space-y-3 md:ml-auto md:w-fit">
               <div className="flex items-start">
                 <MapPin size={18} className="text-neon mt-0.5 mr-2 flex-shrink-0" />
                 <p className="text-gray-400">
