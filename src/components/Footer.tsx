@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { MapPin, Mail, Phone, Leaf } from 'lucide-react';
+import { MapPin, Mail, Phone, Leaf, Github } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <footer className="bg-dark-lighter pt-16 pb-8 border-t border-neon/10">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between">
-          <div className="w-full md:w-1/3 mb-8 md:mb-0">
+        <div className="grid md:grid-cols-3 gap-8">
+          <div>
             <Link to="/" className="flex items-center mb-4">
               <span className="text-neon text-3xl mr-2 font-orbitron">Ω</span>
               <span className="text-white font-orbitron text-lg">OmegaTeam</span>
@@ -19,8 +19,8 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="w-full md:w-1/3 mb-8 md:mb-0">
-            <h4 className="text-white font-titillium text-lg mb-4 text-center">Our Commitment to Sustainability​</h4>
+          <div className="text-center">
+            <h4 className="text-white font-titillium text-lg mb-4">Our Commitment to Sustainability​</h4>
             <div className="flex items-start justify-center">
               <Leaf size={18} className="text-neon mt-1 mr-2 flex-shrink-0" />
               <p className="text-gray-400 text-center">
@@ -29,21 +29,21 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="w-full md:w-1/3">
-            <h4 className="text-white font-titillium text-lg mb-4 md:text-right">Contact Us</h4>
-            <div className="space-y-3 md:ml-auto md:w-fit">
-              <div className="flex items-start">
+          <div className="text-right">
+            <h4 className="text-white font-titillium text-lg mb-4">Contact Us</h4>
+            <div className="space-y-3 ml-auto w-fit">
+              <div className="flex items-start justify-end">
                 <MapPin size={18} className="text-neon mt-0.5 mr-2 flex-shrink-0" />
                 <p className="text-gray-400">
                   Dubai Silicon Oasis – Free Zone<br />
                   Techno Point Building – Dubai – UAE
                 </p>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-end">
                 <Phone size={18} className="text-neon mr-2 flex-shrink-0" />
                 <p className="text-gray-400">+971 4-123-4567</p>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-end">
                 <Mail size={18} className="text-neon mr-2 flex-shrink-0" />
                 <p className="text-gray-400">hello@omegateam.ai</p>
               </div>
