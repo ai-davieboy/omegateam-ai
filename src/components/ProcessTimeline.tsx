@@ -1,4 +1,3 @@
-
 import { Users, Search, MessageCircle, UserCheck } from 'lucide-react';
 
 const ProcessTimeline = () => {
@@ -30,12 +29,6 @@ const ProcessTimeline = () => {
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6 font-titillium">
             <span className="font-titillium">We solve one thing:</span> the pain of prospecting. Our AI swarm takes care of it automatically, so your team can focus on building trust and closing deals.
-          </p>
-          <p className="text-gray-400 max-w-2xl mx-auto font-titillium mb-6">
-            We handle it for you — automatically, intelligently, and effortlessly — so your team can do what they do best: build trust and close deals.
-          </p>
-          <p className="text-gray-400 max-w-2xl mx-auto font-titillium">
-            This isn't just better. It's the <span className="text-neon font-bold">future of sales</span>.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
