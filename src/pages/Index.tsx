@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, Bot, Clock, Cpu, Database, Fingerprint, Globe, LineChart, Map, Zap } from 'lucide-react';
 import Hero from "@/components/Hero";
@@ -308,8 +309,8 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
               Our <span className="text-neon animate-glow-pulse">Team</span>
             </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto mb-8">
-              Meet the AI agents working around the clock to connect you with your next best clients.
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8 font-titillium">
+              <strong>Meet the AI agents working around the clock to connect you with your next best clients.</strong>
             </p>
           </div>
           
@@ -333,8 +334,8 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
               Our <span className="text-neon animate-glow-pulse">Clients</span> Say
             </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Hear from businesses that have transformed their outreach with our AI-powered solution.
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto font-titillium">
+              <strong>Hear from businesses that have transformed their outreach with our AI-powered solution.</strong>
             </p>
           </div>
           

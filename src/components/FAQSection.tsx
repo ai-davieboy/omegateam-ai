@@ -1,101 +1,68 @@
 
-import { useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
-
-interface FAQItem {
-  question: string;
-  answer: React.ReactNode;
-}
+import React from 'react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const FAQSection = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  
-  const faqs: FAQItem[] = [
+  const faqs = [
     {
-      question: "Do you guarantee conversions from your outreach?",
-      answer: (
-        <>
-          <p className="text-gray-300 mb-2">No. Here's what we do guarantee:</p>
-          <ul className="list-disc pl-5 mb-4 space-y-2">
-            <li className="text-gray-300"><strong className="text-neon">Perfect Targeting:</strong> We reach the right buyer personas, fully aligned with your ICP.</li>
-            <li className="text-gray-300"><strong className="text-neon">Relentless Optimization:</strong> Through ongoing A/B testing, we maximize message open rates and replies.</li>
-            <li className="text-gray-300"><strong className="text-neon">Best Effort Execution:</strong> If your offer is strong and the timing is right, we give it every possible edge to succeed.</li>
-          </ul>
-          <p className="text-gray-300">Ultimately, conversions depend on market demand and the strength of your proposition. We bring the tools, strategy, and execution—your offer seals the deal.</p>
-        </>
-      )
+      question: "What industries do you support?",
+      answer: "We support a wide range of B2B industries including SaaS, professional services, manufacturing, healthcare, fintech, and more. Our AI outreach system is adaptable to various selling contexts and can be customized for your specific industry needs."
     },
     {
-      question: "Do you use LinkedIn DMs or cold calls for outreach?",
-      answer: (
-        <>
-          <p className="text-gray-300 mb-2">No. We don't cold call or slide into LinkedIn DMs.</p>
-          <ul className="list-disc pl-5 mb-4 space-y-2">
-            <li className="text-gray-300">Cold calls interrupt people during their workday when they're focused on operational priorities — it's intrusive and rarely well-received.</li>
-            <li className="text-gray-300">LinkedIn is perceived as a career and networking space, not a sales channel — many professionals find business pitches there off-putting or inappropriate.</li>
-          </ul>
-          <p className="text-gray-300">We use work email — it respects the prospect's time, allows thoughtful review, and consistently delivers the best results for high-ticket B2B sales.</p>
-        </>
-      )
+      question: "How do you comply with privacy regulations?",
+      answer: "We strictly adhere to GDPR, CCPA, and other relevant privacy regulations. We only use publicly available business information, implement rigorous data security measures, and provide clear opt-out mechanisms for all communications."
     },
     {
-      question: "What kind of businesses do you work with?",
-      answer: "We work with B2B companies across industries who target specific decision-makers and have a clear value proposition."
+      question: "How quickly can I expect results?",
+      answer: "Most clients see initial positive responses within the first 2-4 weeks. However, building a sustainable pipeline typically takes 2-3 months as our AI system learns and optimizes based on response patterns specific to your market."
     },
     {
-      question: "What's the typical ROI timeline?",
-      answer: "Most clients see initial results within 2-4 weeks, with positive ROI achieved within the first 6-8 weeks depending on sales cycle length."
+      question: "Do I need to prepare any materials?",
+      answer: "Yes, we'll need your ideal client profile, value proposition, and any existing marketing materials you have. We'll also need access to a team member who can provide industry expertise during the onboarding process."
+    },
+    {
+      question: "How is this different from traditional outreach?",
+      answer: "Unlike human-driven outreach that's limited by time and consistency, our AI operates 24/7, maintains perfect consistency, learns continuously from interactions, and can manage thousands of simultaneous conversations without quality degradation."
+    },
+    {
+      question: "What happens when someone responds positively?",
+      answer: "When we identify a qualified opportunity, we immediately transfer the conversation to your sales team via your CRM or email, providing full context and conversation history so you can smoothly continue the relationship-building process."
     }
   ];
-  
-  const toggleFAQ = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-  
+
   return (
-    <div className="container mx-auto px-4 py-16 bg-dark-lighter">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
-          Frequently <span className="text-neon animate-glow-pulse">Asked Questions</span>
-        </h2>
-        <p className="text-gray-300 max-w-2xl mx-auto">
-          Get answers to common questions about our AI-powered outreach solution.
-        </p>
+    <section id="faq" className="py-16">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
+            FAQ<span className="text-neon animate-glow-pulse">s</span>
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto font-titillium">
+            <strong>Get answers to common questions about our AI-powered outreach solution.</strong>
+          </p>
+        </div>
+        
+        <div className="max-w-3xl mx-auto glassmorphism p-6 rounded-lg">
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`} className="border-b border-white/10 last:border-b-0">
+                <AccordionTrigger className="text-white font-titillium text-left hover:text-neon py-4">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-300 font-titillium">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
       </div>
-      
-      <div className="max-w-4xl mx-auto">
-        {faqs.map((faq, index) => (
-          <div 
-            key={index}
-            className="mb-4 glassmorphism rounded-lg overflow-hidden transition-all duration-300 hover:shadow-neon"
-          >
-            <button
-              className="flex justify-between items-center w-full p-5 text-left"
-              onClick={() => toggleFAQ(index)}
-            >
-              <h3 className="text-lg font-titillium font-medium text-white">{faq.question}</h3>
-              <div className="flex-shrink-0 ml-4">
-                {activeIndex === index ? (
-                  <ChevronUp className="text-neon" />
-                ) : (
-                  <ChevronDown className="text-neon" />
-                )}
-              </div>
-            </button>
-            
-            <div 
-              className={`transition-all duration-300 ease-in-out ${
-                activeIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
-              } overflow-hidden`}
-            >
-              <div className="p-5 pt-0 border-t border-gray-700">
-                {faq.answer}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
 
