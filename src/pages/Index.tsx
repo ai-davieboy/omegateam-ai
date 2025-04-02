@@ -367,7 +367,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/d8c5b329-3332-4dfa-a970-d839daddbbb7.png" 
                 alt="Coffee for Closers" 
-                className="max-w-full h-auto rounded-lg shadow-neon"
+                className="max-w-[70%] h-auto rounded-lg shadow-neon"
               />
             </div>
           </div>
