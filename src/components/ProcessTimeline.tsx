@@ -29,7 +29,7 @@ const ProcessTimeline = () => {
             How We <span className="text-neon animate-glow-pulse">Can Help</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6 font-titillium">
-            <span className="font-titillium">We solve one big problem:</span> Most sales reps hate and struggle with the first stage of the sales cycle — prospecting.
+            <span className="font-titillium">We focus on one thing:</span> helping sales reps overcome the toughest part of the job — prospecting.
           </p>
           <p className="text-gray-400 max-w-2xl mx-auto font-titillium">
             Our AI swarm handles this automatically and efficiently, freeing your team to do what they do best: build relationships and close deals. 
