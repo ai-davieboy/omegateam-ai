@@ -362,6 +362,14 @@ const Index = () => {
             <p className="text-xl text-gray-300 mb-8 font-titillium">
               Experience how our AI-powered solution can revolutionize your lead generation.
             </p>
+            
+            <div className="flex justify-center mb-8">
+              <img 
+                src="/lovable-uploads/d8c5b329-3332-4dfa-a970-d839daddbbb7.png" 
+                alt="Coffee for Closers" 
+                className="max-w-full h-auto rounded-lg shadow-neon"
+              />
+            </div>
           </div>
         </div>
       </section>
