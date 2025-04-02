@@ -1,6 +1,5 @@
-
 import { Link } from 'react-router-dom';
-import { MapPin, Mail, Phone, Leaf, Github } from 'lucide-react';
+import { MapPin, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,19 +19,10 @@ const Footer = () => {
           </div>
           
           <div>
-            <div className="flex items-center mb-4">
-              <Leaf size={18} className="text-neon mr-2 flex-shrink-0" />
-              <h4 className="text-white font-titillium text-lg">Our Commitment to Sustainability​</h4>
-            </div>
+            <h4 className="text-white font-titillium text-lg mb-4">Commitment to Sustainability​</h4>
             <p className="text-gray-400 text-sm">
               For every client partnership, we establish and maintain a beehive, supporting biodiversity and underlining the vital role bees play in our ecosystem.
             </p>
-            <div className="mt-4">
-              <a href="https://github.com/omegateam" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-neon transition-colors">
-                <Github size={18} className="mr-2" />
-                <span className="text-sm">GitHub</span>
-              </a>
-            </div>
           </div>
           
           <div>
