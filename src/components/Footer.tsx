@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="w-full md:max-w-md mb-8 md:mb-0">
             <Link to="/" className="flex items-center mb-4">
               <span className="text-neon text-3xl mr-2 font-orbitron">Ω</span>
-              <span className="text-white font-orbitron text-xl">OmegaTeam</span>
+              <span className="text-white font-orbitron text-lg">OmegaTeam</span>
             </Link>
             <p className="text-gray-400 text-sm mb-4">
               AI lead generation swarm working 24/7 to find, engage, and convert your Ideal clients without human intervention.

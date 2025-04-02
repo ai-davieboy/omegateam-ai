@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center group">
             <span className="text-neon text-4xl mr-2 font-orbitron">Ω</span>
-            <span className="text-white font-orbitron text-2xl group-hover:text-glow transition-all">
+            <span className="text-white font-orbitron text-xl group-hover:text-glow transition-all">
               OmegaTeam
             </span>
           </div>
