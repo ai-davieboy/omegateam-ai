@@ -161,7 +161,7 @@ const Index = () => {
       photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/wang.png"
     }
   ];
-
+  
   return (
     <>
       <Navbar />
@@ -206,7 +206,7 @@ const Index = () => {
               <strong>Humans fail at routine. But excel at relationships.</strong>
             </p>
             <p className="text-gray-400 max-w-2xl mx-auto font-titillium">
-              Our AI gives you these advantages
+              
             </p>
           </div>
           
