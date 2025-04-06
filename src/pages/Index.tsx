@@ -250,7 +250,7 @@ const Index = () => {
             
             <div className="lg:w-3/5 glassmorphism p-8 rounded-lg">
               <div className="flex flex-col items-center text-center lg:text-left lg:items-start">
-                <p className="text-xl mb-8">
+                <p className="text-lg mb-8 text-gray-300">
                   We implement bank-level encryption and strict data access policies to ensure your information is always protected.
                 </p>
                 
