@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar';
 import StatCard from '../components/StatCard';
 import TestimonialCard from '../components/TestimonialCard';
 import TeamCard from '../components/TeamCard';
-import { Shield, Clock, Zap, Users, Target, CheckCircle, Globe, MessageSquare, Layers, ShieldCheck, ShieldAlert, ShieldOff, ShieldX } from 'lucide-react';
+import { Shield, Clock, Zap, Users, Target, CheckCircle, Globe, MessageSquare, Layers, ShieldCheck, ShieldX, ShieldOff, ShieldAlert, ShieldCheck as UserCheck } from 'lucide-react';
 
 const Index = () => {
   const teamMembers = [
@@ -152,7 +152,7 @@ const Index = () => {
       {/* Hero Section */}
       <Hero />
       
-      {/* Stats Section - Increased vertical padding */}
+      {/* Stats Section */}
       <section id="stats" className="py-24 md:py-32">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-orbitron">
@@ -164,7 +164,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <StatCard 
-              percentage="352%" 
+              percentage="35.2%" 
               description="of a sales rep's time is spent on actual selling." 
               source="Forbes"
             />
@@ -187,10 +187,12 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Process Section - Moved here */}
-      <ProcessTimeline />
+      {/* Process Section */}
+      <section id="process" className="py-24 md:py-32">
+        <ProcessTimeline />
+      </section>
       
-      {/* Why AI Section - Updated to remove image and center titles */}
+      {/* Why AI Section */}
       <section id="why-ai" className="py-16 bg-dark/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
@@ -317,7 +319,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* FAQ Section - moved between CTA and Footer */}
+      {/* FAQ Section */}
       <FAQSection />
       
       <Footer />
