@@ -229,6 +229,10 @@ const Index = () => {
       {/* Data Security Section */}
       <section id="data-security" className="py-16">
         <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 font-orbitron">
+            Your <span className="text-neon">Data Security</span> Is Our Priority
+          </h2>
+          
           <div className="flex flex-col lg:flex-row items-start gap-12">
             <div className="lg:w-2/5 space-y-4">
               {dataSecurityFeatures.map((feature, index) => (
@@ -246,10 +250,6 @@ const Index = () => {
             
             <div className="lg:w-3/5 glassmorphism p-8 rounded-lg">
               <div className="flex flex-col items-center text-center lg:text-left lg:items-start">
-                <ShieldAlert className="w-16 h-16 text-neon mb-6" />
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 font-orbitron">
-                  Your <span className="text-neon">Data Security</span> Is Our Priority
-                </h2>
                 <p className="text-xl mb-8">
                   We implement bank-level encryption and strict data access policies to ensure your information is always protected.
                 </p>
