@@ -96,7 +96,7 @@ const Index = () => {
             
             <div className="flex justify-center mb-8">
               <img 
-                src="/lovable-uploads/d8c5b329-3332-4dfa-a970-d839daddbbb7.png" 
+                src="https://github.com/ai-davieboy/shared-pics/blob/main/coffee.png?raw=true" 
                 alt="Coffee for Closers" 
                 className="max-w-[70%] h-auto rounded-lg"
               />
