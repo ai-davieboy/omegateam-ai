@@ -31,6 +31,46 @@ const Index = () => {
       name: "Chris",
       title: "Cyber Security & Data Protection",
       photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/chris.png"
+    },
+    {
+      name: "Zara",
+      title: "Business Development Lead",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/zara.png"
+    },
+    {
+      name: "Bryan",
+      title: "Business Development Partner",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/bryan.png"
+    },
+    {
+      name: "Hana",
+      title: "Business Development Partner",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/hana.png"
+    },
+    {
+      name: "Claire",
+      title: "Business Development Partner",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/claire_burns.png"
+    },
+    {
+      name: "Nasser",
+      title: "Chief Commercial Officer",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/nasser.png"
+    },
+    {
+      name: "Kailee",
+      title: "Growth Manager",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/kailee.png"
+    },
+    {
+      name: "Jisoo",
+      title: "Client Manager",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/jisoo.png"
+    },
+    {
+      name: "Wang",
+      title: "Lead Research Analyst",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/wang.png"
     }
   ];
 
