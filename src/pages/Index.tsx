@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
@@ -9,7 +8,7 @@ import Navbar from '../components/Navbar';
 import StatCard from '../components/StatCard';
 import TestimonialCard from '../components/TestimonialCard';
 import TeamCard from '../components/TeamCard';
-import { Shield, Clock, Zap, Users, Target, CheckCircle, Globe, MessageSquare, Layers, Lock } from 'lucide-react';
+import { Shield, Clock, Zap, Users, Target, CheckCircle, Globe, MessageSquare, Layers, ShieldCheck, ShieldAlert, ShieldOff, ShieldX } from 'lucide-react';
 
 const Index = () => {
   const teamMembers = [
@@ -120,22 +119,27 @@ const Index = () => {
 
   const dataSecurityFeatures = [
     {
+      icon: <ShieldCheck className="w-6 h-6 text-neon" />,
       title: "Data Privacy & Compliance",
       description: "Fully GDPR-compliant."
     },
     {
+      icon: <ShieldX className="w-6 h-6 text-neon" />,
       title: "No Personal Data",
       description: "We don't store/process personal data"
     },
     {
+      icon: <Shield className="w-6 h-6 text-neon" />,
       title: "Public Data Only",
       description: "Legal, publicly available sources"
     },
     {
+      icon: <Target className="w-6 h-6 text-neon" />,
       title: "Purpose-Driven",
       description: "Only relevant decision-makers"
     },
     {
+      icon: <ShieldOff className="w-6 h-6 text-neon" />,
       title: "Easy Opt-Out",
       description: "One-click unsubscribe always available"
     }
@@ -225,36 +229,39 @@ const Index = () => {
       {/* Data Security Section */}
       <section id="data-security" className="py-16">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
-            <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 font-orbitron">
-                Your <span className="text-neon">Data Security</span> Is Our Priority
-              </h2>
-              <p className="text-xl mb-8">
-                We implement bank-level encryption and strict data access policies to ensure your information is always protected.
-              </p>
-              
-              <div className="space-y-4">
-                {dataSecurityFeatures.map((feature, index) => (
-                  <div key={index} className="glassmorphism p-4 rounded-lg flex items-center">
-                    <Lock className="w-6 h-6 text-neon mr-4" />
-                    <div>
-                      <h4 className="font-bold text-white">{feature.title}</h4>
-                      <p className="text-gray-300 text-sm">{feature.description}</p>
-                    </div>
+          <div className="flex flex-col lg:flex-row items-start gap-12">
+            <div className="lg:w-2/5 space-y-4">
+              {dataSecurityFeatures.map((feature, index) => (
+                <div key={index} className="glassmorphism p-4 rounded-lg flex items-center">
+                  <div className="mr-4 flex-shrink-0">
+                    {feature.icon}
                   </div>
-                ))}
-              </div>
+                  <div>
+                    <h4 className="font-bold text-white">{feature.title}</h4>
+                    <p className="text-gray-300 text-sm">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
             
-            <div className="lg:w-1/2 flex justify-center">
-              <div className="relative">
-                <img 
-                  src="https://github.com/ai-davieboy/shared-pics/blob/main/security-graphic.png?raw=true" 
-                  alt="Data security" 
-                  className="max-w-full h-auto rounded-lg shadow-neon"
-                />
-                <div className="absolute inset-0 bg-gradient-radial rounded-lg opacity-30"></div>
+            <div className="lg:w-3/5 glassmorphism p-8 rounded-lg">
+              <div className="flex flex-col items-center text-center lg:text-left lg:items-start">
+                <ShieldAlert className="w-16 h-16 text-neon mb-6" />
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 font-orbitron">
+                  Your <span className="text-neon">Data Security</span> Is Our Priority
+                </h2>
+                <p className="text-xl mb-8">
+                  We implement bank-level encryption and strict data access policies to ensure your information is always protected.
+                </p>
+                
+                <div className="relative w-full max-w-md mx-auto lg:mx-0 mt-4">
+                  <img 
+                    src="https://github.com/ai-davieboy/shared-pics/blob/main/security-graphic.png?raw=true" 
+                    alt="Data security" 
+                    className="max-w-full h-auto rounded-lg shadow-neon"
+                  />
+                  <div className="absolute inset-0 bg-gradient-radial rounded-lg opacity-30"></div>
+                </div>
               </div>
             </div>
           </div>
