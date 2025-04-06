@@ -18,7 +18,7 @@ const Index = () => {
       <Hero />
       
       {/* Stats Section */}
-      <section id="stats" className="py-16 bg-dark-lighter">
+      <section id="stats" className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-orbitron">
             Passive Sales Strategy Is <span className="text-neon">Costing You Growth</span>
@@ -85,9 +85,6 @@ const Index = () => {
         </div>
       </section>
       
-      {/* FAQ Section */}
-      <FAQSection />
-      
       {/* CTA Section */}
       <section id="cta" className="py-16">
         <div className="container mx-auto px-4">
@@ -109,6 +106,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* FAQ Section - moved between CTA and Footer */}
+      <FAQSection />
       
       <Footer />
     </div>
