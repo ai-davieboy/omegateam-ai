@@ -9,6 +9,7 @@ import Navbar from '../components/Navbar';
 import StatCard from '../components/StatCard';
 import TestimonialCard from '../components/TestimonialCard';
 import TeamCard from '../components/TeamCard';
+import { Shield, Clock, Zap, Users, Target, CheckCircle, Globe, MessageSquare, Layers, Lock } from 'lucide-react';
 
 const Index = () => {
   const teamMembers = [
@@ -74,6 +75,72 @@ const Index = () => {
     }
   ];
 
+  const aiFeatures = [
+    {
+      icon: <Clock className="w-8 h-8 text-neon" />,
+      title: "24/7 Consistency",
+      description: "Our AI operates continuously, ensuring leads are engaged promptly regardless of time zones."
+    },
+    {
+      icon: <Zap className="w-8 h-8 text-neon" />,
+      title: "Instant Deployment",
+      description: "No lengthy onboarding. Get your AI outreach engine running in days, not months."
+    },
+    {
+      icon: <CheckCircle className="w-8 h-8 text-neon" />,
+      title: "Data-Driven Decisions",
+      description: "Every interaction generates insights to continually refine your targeting."
+    },
+    {
+      icon: <Target className="w-8 h-8 text-neon" />,
+      title: "Precision Targeting",
+      description: "AI identifies and prioritizes prospects most likely to convert based on behavior patterns."
+    },
+    {
+      icon: <Shield className="w-8 h-8 text-neon" />,
+      title: "Zero Human Errors",
+      description: "Eliminate typos, scheduling mishaps, and follow-up failures that plague manual outreach."
+    },
+    {
+      icon: <Globe className="w-8 h-8 text-neon" />,
+      title: "Time Zone Coverage",
+      description: "Connect with prospects globally without staffing international teams."
+    },
+    {
+      icon: <MessageSquare className="w-8 h-8 text-neon" />,
+      title: "Personalized Outreach",
+      description: "Each message is tailored to the recipient's role, industry, and potential pain points."
+    },
+    {
+      icon: <Layers className="w-8 h-8 text-neon" />,
+      title: "Seamless Multitasking",
+      description: "Manage thousands of concurrent conversations without quality degradation."
+    }
+  ];
+
+  const dataSecurityFeatures = [
+    {
+      title: "Data Privacy & Compliance",
+      description: "Fully GDPR-compliant."
+    },
+    {
+      title: "No Personal Data",
+      description: "We don't store/process personal data"
+    },
+    {
+      title: "Public Data Only",
+      description: "Legal, publicly available sources"
+    },
+    {
+      title: "Purpose-Driven",
+      description: "Only relevant decision-makers"
+    },
+    {
+      title: "Easy Opt-Out",
+      description: "One-click unsubscribe always available"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-dark text-white">
       <Navbar />
@@ -112,6 +179,84 @@ const Index = () => {
               description="of marketers cite poor data quality as their biggest barrier." 
               source="DemandGen Report"
             />
+          </div>
+        </div>
+      </section>
+      
+      {/* Why AI Section */}
+      <section id="why-ai" className="py-16 bg-dark/50">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 font-orbitron">
+                Why <span className="text-neon">AI</span>?
+              </h2>
+              <h3 className="text-2xl mb-8 font-titillium">
+                Humans fail at routine. But excel at relationships.
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {aiFeatures.map((feature, index) => (
+                  <div key={index} className="glassmorphism p-5 rounded-lg">
+                    <div className="flex items-center gap-3 mb-3">
+                      {feature.icon}
+                      <h4 className="font-bold">{feature.title}</h4>
+                    </div>
+                    <p className="text-gray-300 text-sm">{feature.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="lg:w-1/2 flex justify-center">
+              <div className="relative">
+                <img 
+                  src="https://github.com/ai-davieboy/shared-pics/blob/main/ai-graphic.png?raw=true" 
+                  alt="AI-powered prospecting" 
+                  className="max-w-full h-auto rounded-lg shadow-neon"
+                />
+                <div className="absolute inset-0 bg-gradient-radial rounded-lg opacity-30"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Data Security Section */}
+      <section id="data-security" className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
+            <div className="lg:w-1/2">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 font-orbitron">
+                Your <span className="text-neon">Data Security</span> Is Our Priority
+              </h2>
+              <p className="text-xl mb-8">
+                We implement bank-level encryption and strict data access policies to ensure your information is always protected.
+              </p>
+              
+              <div className="space-y-4">
+                {dataSecurityFeatures.map((feature, index) => (
+                  <div key={index} className="glassmorphism p-4 rounded-lg flex items-center">
+                    <Lock className="w-6 h-6 text-neon mr-4" />
+                    <div>
+                      <h4 className="font-bold text-white">{feature.title}</h4>
+                      <p className="text-gray-300 text-sm">{feature.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="lg:w-1/2 flex justify-center">
+              <div className="relative">
+                <img 
+                  src="https://github.com/ai-davieboy/shared-pics/blob/main/security-graphic.png?raw=true" 
+                  alt="Data security" 
+                  className="max-w-full h-auto rounded-lg shadow-neon"
+                />
+                <div className="absolute inset-0 bg-gradient-radial rounded-lg opacity-30"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
