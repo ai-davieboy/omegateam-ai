@@ -176,31 +176,6 @@ const Index = () => {
         </div>
       </section>
       
-      <section id="why-ai" className="py-16 md:py-24 bg-dark/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-orbitron">
-              Why <span className="text-neon">AI</span>?
-            </h2>
-            <h3 className="text-2xl mb-8 font-titillium">
-              Humans fail at routine. But excel at relationships.
-            </h3>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {aiFeatures.map((feature, index) => (
-              <div key={index} className="glassmorphism p-5 rounded-lg">
-                <div className="flex items-center gap-3 mb-3">
-                  {feature.icon}
-                  <h4 className="font-bold">{feature.title}</h4>
-                </div>
-                <p className="text-gray-300 text-sm">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
       <section id="how-we-can-help" className="py-16 md:py-24">
         <ProcessTimeline />
       </section>
@@ -235,6 +210,31 @@ const Index = () => {
               description="of marketers cite poor data quality as their biggest barrier." 
               source="DemandGen Report"
             />
+          </div>
+        </div>
+      </section>
+      
+      <section id="why-ai" className="py-16 md:py-24 bg-dark/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-orbitron">
+              Why <span className="text-neon">AI</span>?
+            </h2>
+            <h3 className="text-2xl mb-8 font-titillium">
+              Humans fail at routine. But excel at relationships.
+            </h3>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {aiFeatures.map((feature, index) => (
+              <div key={index} className="glassmorphism p-5 rounded-lg">
+                <div className="flex items-center gap-3 mb-3">
+                  {feature.icon}
+                  <h4 className="font-bold">{feature.title}</h4>
+                </div>
+                <p className="text-gray-300 text-sm">{feature.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
