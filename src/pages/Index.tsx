@@ -236,20 +236,18 @@ const Index = () => {
             We implement bank-level encryption and strict data access policies to ensure your information is always protected.
           </p>
           
-          <div className="flex flex-col lg:flex-row items-start gap-12">
-            <div className="lg:w-2/5 space-y-4">
-              {dataSecurityFeatures.map((feature, index) => (
-                <div key={index} className="glassmorphism p-4 rounded-lg flex items-center">
-                  <div className="mr-4 flex-shrink-0">
-                    {feature.icon}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white">{feature.title}</h4>
-                    <p className="text-gray-300 text-sm">{feature.description}</p>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+            {dataSecurityFeatures.map((feature, index) => (
+              <div key={index} className="glassmorphism p-4 rounded-lg flex flex-col items-center text-center">
+                <div className="mb-3 flex-shrink-0">
+                  {feature.icon}
                 </div>
-              ))}
-            </div>
+                <div>
+                  <h4 className="font-bold text-white text-sm md:text-base">{feature.title}</h4>
+                  <p className="text-gray-300 text-xs md:text-sm">{feature.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
