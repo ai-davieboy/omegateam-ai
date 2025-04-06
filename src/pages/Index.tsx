@@ -149,10 +149,8 @@ const Index = () => {
     <div className="min-h-screen bg-dark text-white">
       <Navbar />
       
-      {/* Hero Section */}
       <Hero />
       
-      {/* Stats Section - consistent spacing py-16 md:py-24 */}
       <section id="stats" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-orbitron">
@@ -187,38 +185,10 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Process Section - consistent spacing py-16 md:py-24 */}
       <section id="process" className="py-16 md:py-24">
         <ProcessTimeline />
       </section>
       
-      {/* Why AI Section - consistent spacing py-16 md:py-24 */}
-      <section id="why-ai" className="py-16 md:py-24 bg-dark/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-orbitron">
-              Why <span className="text-neon">AI</span>?
-            </h2>
-            <h3 className="text-2xl mb-8 font-titillium">
-              Humans fail at routine. But excel at relationships.
-            </h3>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {aiFeatures.map((feature, index) => (
-              <div key={index} className="glassmorphism p-5 rounded-lg">
-                <div className="flex items-center gap-3 mb-3">
-                  {feature.icon}
-                  <h4 className="font-bold">{feature.title}</h4>
-                </div>
-                <p className="text-gray-300 text-sm">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Data Security Section - consistent spacing py-16 md:py-24 */}
       <section id="data-security" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-orbitron">
@@ -244,7 +214,31 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Team Section - consistent spacing py-16 md:py-24 */}
+      <section id="why-ai" className="py-16 md:py-24 bg-dark/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-orbitron">
+              Why <span className="text-neon">AI</span>?
+            </h2>
+            <h3 className="text-2xl mb-8 font-titillium">
+              Humans fail at routine. But excel at relationships.
+            </h3>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {aiFeatures.map((feature, index) => (
+              <div key={index} className="glassmorphism p-5 rounded-lg">
+                <div className="flex items-center gap-3 mb-3">
+                  {feature.icon}
+                  <h4 className="font-bold">{feature.title}</h4>
+                </div>
+                <p className="text-gray-300 text-sm">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
       <section id="team" className="py-16 md:py-24 bg-dark/50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 font-orbitron">
@@ -267,7 +261,6 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Testimonials Section - consistent spacing py-16 md:py-24 */}
       <section id="testimonials" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-orbitron">
@@ -297,7 +290,6 @@ const Index = () => {
         </div>
       </section>
       
-      {/* CTA Section - consistent spacing py-16 md:py-24 */}
       <section id="cta" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -319,7 +311,6 @@ const Index = () => {
         </div>
       </section>
       
-      {/* FAQ Section - consistent spacing */}
       <FAQSection />
       
       <Footer />
