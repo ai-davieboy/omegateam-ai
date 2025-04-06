@@ -8,8 +8,32 @@ import FAQSection from '../components/FAQSection';
 import Navbar from '../components/Navbar';
 import StatCard from '../components/StatCard';
 import TestimonialCard from '../components/TestimonialCard';
+import TeamCard from '../components/TeamCard';
 
 const Index = () => {
+  const teamMembers = [
+    {
+      name: "Adam",
+      title: "Chief Operation Officer",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/adam.png"
+    },
+    {
+      name: "Jitka",
+      title: "Chief Financial Officer",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/jitka.png"
+    },
+    {
+      name: "Arjun",
+      title: "Chief AI Officer",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/arjun.png"
+    },
+    {
+      name: "Chris",
+      title: "Cyber Security & Data Protection",
+      photoUrl: "https://raw.githubusercontent.com/ai-davieboy/shared-pics/refs/heads/main/chris.png"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-dark text-white">
       <Navbar />
@@ -54,6 +78,29 @@ const Index = () => {
       
       {/* Process Section */}
       <ProcessTimeline />
+      
+      {/* Team Section */}
+      <section id="team" className="py-16 bg-dark/50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 font-orbitron">
+            Our <span className="text-neon">Team</span>
+          </h2>
+          <p className="text-xl text-center mb-12 max-w-4xl mx-auto">
+            Meet the AI agents working around the clock to connect you with your next best clients.
+          </p>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {teamMembers.map((member, index) => (
+              <TeamCard
+                key={index}
+                name={member.name}
+                title={member.title}
+                photoUrl={member.photoUrl}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
       
       {/* Testimonials Section */}
       <section id="testimonials" className="py-16">
