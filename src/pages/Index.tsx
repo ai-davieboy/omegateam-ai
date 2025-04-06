@@ -151,6 +151,35 @@ const Index = () => {
       
       <Hero />
       
+      <section id="data-security" className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-orbitron">
+            Your <span className="text-neon">Data Security</span> Is Our Priority
+          </h2>
+          <p className="text-xl text-center mb-10 max-w-4xl mx-auto">
+            We implement bank-level encryption and strict data access policies to ensure your information is always protected.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+            {dataSecurityFeatures.map((feature, index) => (
+              <div key={index} className="glassmorphism p-4 rounded-lg flex flex-col items-center text-center">
+                <div className="mb-3 flex-shrink-0">
+                  {feature.icon}
+                </div>
+                <div>
+                  <h4 className="font-bold text-white text-sm md:text-base">{feature.title}</h4>
+                  <p className="text-gray-300 text-xs md:text-sm">{feature.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      <section id="how-we-can-help" className="py-16 md:py-24">
+        <ProcessTimeline />
+      </section>
+      
       <section id="passive-sales-strategy" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-orbitron">
@@ -183,35 +212,6 @@ const Index = () => {
             />
           </div>
         </div>
-      </section>
-      
-      <section id="data-security" className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-orbitron">
-            Your <span className="text-neon">Data Security</span> Is Our Priority
-          </h2>
-          <p className="text-xl text-center mb-10 max-w-4xl mx-auto">
-            We implement bank-level encryption and strict data access policies to ensure your information is always protected.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-            {dataSecurityFeatures.map((feature, index) => (
-              <div key={index} className="glassmorphism p-4 rounded-lg flex flex-col items-center text-center">
-                <div className="mb-3 flex-shrink-0">
-                  {feature.icon}
-                </div>
-                <div>
-                  <h4 className="font-bold text-white text-sm md:text-base">{feature.title}</h4>
-                  <p className="text-gray-300 text-xs md:text-sm">{feature.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      <section id="how-we-can-help" className="py-16 md:py-24">
-        <ProcessTimeline />
       </section>
       
       <section id="why-ai" className="py-16 md:py-24 bg-dark/50">
