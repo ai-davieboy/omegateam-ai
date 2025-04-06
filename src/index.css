@@ -1,44 +1,9 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Add SF Pro Display from Apple's CDN */
 @import url('https://sf.abarba.me/v3/SF-Pro-Display/SF-Pro-Display.css');
-
-@layer base {
-  :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 166 71% 44%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-
-    --accent: 166 71% 44%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
-
-    --radius: 0.5rem;
-  }
-}
 
 @layer base {
   * {
@@ -52,7 +17,8 @@
   }
   
   body {
-    @apply bg-dark text-foreground font-inter overflow-x-hidden;
+    @apply text-foreground font-inter overflow-x-hidden;
+    background-color: #020202;
     background-image: 
       radial-gradient(circle at 50% 50%, rgba(50, 190, 163, 0.03) 0%, transparent 80%),
       linear-gradient(rgba(50, 190, 163, 0.03) 1px, transparent 1px), 
