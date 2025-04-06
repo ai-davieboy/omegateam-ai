@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
@@ -186,20 +185,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="how-we-can-help" className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-orbitron">
-              How We <span className="text-neon animate-glow-pulse">Can Help</span>
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12 font-titillium">
-              We solve one thing: the pain of prospecting. Our AI swarm takes care of it automatically, so your team can focus on building trust and closing deals.
-            </p>
-            <ProcessTimeline />
-          </div>
-        </div>
-      </section>
-      
       <section id="why-ai" className="py-16 md:py-24 bg-dark/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
@@ -224,7 +209,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       <section id="data-security" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-orbitron">
