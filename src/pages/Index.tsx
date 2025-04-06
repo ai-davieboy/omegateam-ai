@@ -17,10 +17,7 @@ const Index = () => {
       {/* Hero Section */}
       <Hero />
       
-      {/* Process Section */}
-      <ProcessTimeline />
-      
-      {/* Stats Section */}
+      {/* Stats Section - Moved right after Hero */}
       <section id="stats" className="py-16 bg-dark-lighter">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-orbitron">
@@ -46,6 +43,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* Process Section */}
+      <ProcessTimeline />
       
       {/* Testimonials Section */}
       <section id="testimonials" className="py-16">
@@ -111,4 +111,3 @@ const Index = () => {
 };
 
 export default Index;
-
