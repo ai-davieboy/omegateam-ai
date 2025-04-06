@@ -96,7 +96,7 @@ const Index = () => {
             
             <div className="flex justify-center mb-8">
               <img 
-                src="https://github.com/ai-davieboy/shared-pics/blob/main/coffee_for_closers.png?raw=true" 
+                src="https://github.com/ai-davieboy/shared-pics/blob/main/Cofee.png?raw=true" 
                 alt="Coffee for Closers" 
                 className="max-w-[70%] h-auto"
               />
@@ -111,3 +111,4 @@ const Index = () => {
 };
 
 export default Index;
+
