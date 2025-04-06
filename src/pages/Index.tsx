@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
@@ -185,6 +186,8 @@ const Index = () => {
         </div>
       </section>
 
+      <ProcessTimeline />
+      
       <section id="why-ai" className="py-16 md:py-24 bg-dark/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
