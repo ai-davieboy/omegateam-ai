@@ -54,16 +54,14 @@ const StatCard = ({ percentage, description, source }: StatCardProps) => {
   return (
     <div 
       ref={cardRef}
-      className="glassmorphism rounded-lg p-6 transition-all duration-300 hover:shadow-neon group"
+      className="glassmorphism rounded-lg p-6 transition-all duration-300 group"
     >
-      <div className="flex flex-col items-start space-y-2">
-        <div className="flex items-baseline">
-          <span className="text-4xl md:text-5xl font-orbitron text-neon group-hover:animate-glow-pulse">
-            {isVisible ? `${count}${percentage.includes('%') ? '%' : ''}` : '0'}
-          </span>
-        </div>
+      <div className="flex flex-col items-start space-y-4">
+        <span className="text-4xl md:text-5xl font-orbitron text-neon group-hover:animate-glow-pulse">
+          {isVisible ? `${count}${percentage.includes('%') ? '%' : ''}` : '0'}
+        </span>
         <p className="text-gray-300 text-lg">{description}</p>
-        <p className="text-neon/60 text-sm">({source})</p>
+        <p className="text-neon/60 text-sm italic">({source})</p>
       </div>
     </div>
   );
