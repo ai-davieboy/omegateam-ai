@@ -152,7 +152,7 @@ const Index = () => {
       {/* Hero Section */}
       <Hero />
       
-      {/* Stats Section */}
+      {/* Stats Section - consistent spacing py-16 md:py-24 */}
       <section id="stats" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-orbitron">
@@ -187,12 +187,12 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Process Section */}
+      {/* Process Section - consistent spacing py-16 md:py-24 */}
       <section id="process" className="py-16 md:py-24">
         <ProcessTimeline />
       </section>
       
-      {/* Why AI Section */}
+      {/* Why AI Section - consistent spacing py-16 md:py-24 */}
       <section id="why-ai" className="py-16 md:py-24 bg-dark/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
@@ -218,7 +218,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Data Security Section */}
+      {/* Data Security Section - consistent spacing py-16 md:py-24 */}
       <section id="data-security" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-orbitron">
@@ -244,7 +244,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Team Section */}
+      {/* Team Section - consistent spacing py-16 md:py-24 */}
       <section id="team" className="py-16 md:py-24 bg-dark/50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 font-orbitron">
@@ -267,7 +267,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Testimonials Section */}
+      {/* Testimonials Section - consistent spacing py-16 md:py-24 */}
       <section id="testimonials" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-orbitron">
@@ -297,7 +297,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* CTA Section */}
+      {/* CTA Section - consistent spacing py-16 md:py-24 */}
       <section id="cta" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -319,7 +319,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* FAQ Section */}
+      {/* FAQ Section - consistent spacing */}
       <FAQSection />
       
       <Footer />
