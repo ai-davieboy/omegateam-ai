@@ -17,9 +17,6 @@ const Index = () => {
       {/* Hero Section */}
       <Hero />
       
-      {/* Process Section */}
-      <ProcessTimeline />
-      
       {/* Stats Section */}
       <section id="stats" className="py-16 bg-dark-lighter">
         <div className="container mx-auto px-4">
@@ -47,6 +44,9 @@ const Index = () => {
         </div>
       </section>
       
+      {/* Process Section */}
+      <ProcessTimeline />
+      
       {/* Testimonials Section */}
       <section id="testimonials" className="py-16">
         <div className="container mx-auto px-4">
@@ -59,21 +59,18 @@ const Index = () => {
               quote="OmegaTeam has completely transformed our lead generation process. We're seeing higher quality leads and our sales team couldn't be happier."
               name="Sarah Johnson"
               role="VP of Sales"
-              company="TechCorp Inc."
               rating={5}
             />
             <TestimonialCard 
               quote="The AI-driven approach has given us an edge over competitors. Our conversion rates have increased by 45% since we started working with OmegaTeam."
               name="Michael Chen"
               role="Marketing Director"
-              company="Innovate Solutions"
               rating={5}
             />
             <TestimonialCard 
               quote="Not only do we get more leads, but the quality is consistently high. It's like having an elite sales team working 24/7."
               name="Jessica Williams"
               role="CEO"
-              company="Growth Ventures"
               rating={5}
             />
           </div>
