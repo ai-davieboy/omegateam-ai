@@ -164,7 +164,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <StatCard 
-              percentage="35.2%" 
+              percentage="36%" 
               description="of a sales rep's time is spent on actual selling." 
               source="Forbes"
             />
