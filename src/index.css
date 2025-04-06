@@ -19,7 +19,7 @@
   
   body {
     @apply text-foreground font-inter overflow-x-hidden;
-    background-color: #272729;
+    background-color: #020202;
     background-image: 
       radial-gradient(circle at 50% 50%, rgba(50, 190, 163, 0.03) 0%, transparent 80%),
       linear-gradient(rgba(50, 190, 163, 0.03) 1px, transparent 1px), 
